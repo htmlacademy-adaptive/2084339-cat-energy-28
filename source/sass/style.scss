@@ -1,1 +1,13 @@
-// Начните писать стили здесь
+@use "./global.scss";
+@use "./fonts.scss";
+@use "./blocks/header.scss";
+@use "./blocks/body.scss";
+@use "./blocks/program.scss";
+@use "./blocks/features.scss";
+@use "./blocks/about.scss";
+@use "./blocks/example.scss";
+@use "./blocks/contacts.scss";
+@use "./blocks/footer.scss";
+@use "./blocks/form.scss";
+@use "./blocks/catalog.scss";
+@use "./blocks/gift.scss";

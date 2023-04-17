@@ -1,0 +1,52 @@
+.features {
+    background-color: #ffffff;
+}
+
+.features__list {
+    list-style: none;
+    padding: 0;
+}
+
+.features__item {
+    background-color: #d9d9d9;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.features__title {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 24px;
+    line-height: 37px;
+    margin: 30px auto 29px 91px;
+    display: flex;
+}
+
+.features__text {
+    font-family: "Lato";
+    src: url(/source/fonts/lato/Lato-Regular.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    color: #444444;
+    font-size: 14px;
+    line-height: 18px;
+    width: 227px;
+    margin: 0 auto 38px 20px;
+    display: flex;
+}
+
+.features__link {
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-items: center;
+    color: #000000;
+    display: flex;
+    margin: 0 auto 22px 19px;
+}
+
+.features__icon {
+    margin-left: 15px;
+}

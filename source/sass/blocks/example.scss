@@ -1,0 +1,90 @@
+.example {
+    background-color: #eaeaea;
+    display: flex;
+}
+
+.example__title {
+    font-size: 36px;
+    line-height: 40px;
+    color: #000000;
+    margin: 25px auto 40px 0;
+    display: flex;
+}
+
+.example__text {
+    font-family: "Lato";
+    src: url(/source/fonts/lato/Lato-Regular.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    color: #444444;
+    font-size: 14px;
+    line-height: 18px;
+    width: 227px;
+    margin: 0 auto 38px 20px;
+    display: flex;
+}
+
+.example__list {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.example__item {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.example__number {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0 auto 8px auto;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.example__description {
+    font-family: "Lato";
+    src: url(/source/fonts/lato/Lato-Regular.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    color: #444444;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0 auto 20px auto;;
+}
+
+.example__sum {
+    text-transform: uppercase;
+}
+
+.example__image {
+    display: flex;
+    position: relative;
+}
+
+.example__slider {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.arrows {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: #666666 solid 2px;
+}

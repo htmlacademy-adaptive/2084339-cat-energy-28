@@ -1,0 +1,25 @@
+.contacts {
+    background-color: #ffffff;
+}
+
+.contacts__container {
+    display: flex;
+    gap: 2px;
+}
+
+.contacts__text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #111111;
+    text-transform: uppercase;
+}
+
+.contacts__address {
+    font-family: "Lato";
+    src: url(../fonts/lato/Lato-Regular.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    color: #444444;
+    font-size: 14px;
+    line-height: 18px;
+}

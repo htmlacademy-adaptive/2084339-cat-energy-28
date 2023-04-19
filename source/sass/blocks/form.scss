@@ -1,72 +1,94 @@
 .program__form {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .form__list,
 .form__radio-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .form__fieldset {
-    border: none;
-    margin: 0 0 46px 0;
-    padding: 0;
+  border: none;
+  margin: 0 0 46px 0;
+  padding: 0;
+}
+
+.form__fieldset-comment {
+  margin: 0;
 }
 
 .form__item {
-    display: flex;
-    gap: 13px;
-    align-items: center;
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+.form__item:not(:last-child) {
+  margin: 0 0 14px 0;
 }
 
 .form__title {
-    margin: 0 0 35px 0;
-    padding: 0;
+  margin: 0 0 35px 0;
+  padding: 0;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 .form__label-text,
 .form__label-radio,
 .form-checkbox-text {
-    text-transform: uppercase;
-    font-size: 16px;
-    line-height: 18px;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  white-space: nowrap;
 }
 
 .form__input-text {
-    padding: 14px 0 14px 20px;
-    margin: 0;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-    width: 100%;
+  padding: 14px 0 14px 20px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 100%;
+  font-family: "Oswald", "Arial", sans-serif;
 }
 
 .form__input-radio,
 .form__input-checkbox {
-    width: 30px;
-    height: 30px;
-    margin: 0;
-    padding: 0;
+  width: 30px;
+  height: 30px;
+  margin: 0 16px 0 0;
+  padding: 0;
+  text-align: center;
 }
 
 .form__comment {
-    height: 150px;
-    width: 100%;
-    margin-bottom: 23px;
+  height: 150px;
+  width: 100%;
+  margin-bottom: 9px;
+  padding: 0;
 }
 
 .form__add {
-    margin: 0;
-    font-family: "Lato";
-    src: url(../fonts/lato/Lato-Regular.woff2) format("woff2");
-    font-style: normal;
-    font-weight: 400;
-    color: #444444;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    margin: 21px auto 32px auto;
+  margin: 0;
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #444444;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  margin: 21px auto 32px auto;
+}
+
+.form__radio-item {
+  display: flex;
+  align-items: center;
+}
+
+.form__radio-item:not(:last-child) {
+  margin: 0 0 13px 0;
 }

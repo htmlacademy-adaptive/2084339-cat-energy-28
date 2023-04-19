@@ -7,37 +7,37 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <a class="header__logo">
-        <img
-          class="header__image"
-          src="../images/logo-group.svg"
-          alt="Логотип «Cat Energy»"
-          width="191"
-          height="38"
-        />
-      </a>
-      <nav class="nav">
-        <button class="nav__toggle" type="button">
+      <div class="header__wrapper container">
+        <a class="header__logo">
+          <img
+            class="header__image"
+            src="../source/img/logo-group.svg"
+            alt="Логотип «Cat Energy»"
+            width="191"
+            height="38"
+          />
+        </a>
+        <button class="header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
-          <svg class="nav__menu" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="header__menu" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
             <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
             <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
           </svg>
         </button>
-        <div class="nav__wrapper">
-          <ul class="nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link-current" href="#">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link-current" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="main-container">
@@ -46,7 +46,7 @@
           <h1 class="catalog__page-title">Каталог продукции</h1>
           <ul class="catalog__list">
             <li class="catalog__item">
-              <img class="catalog__image" src="../images/catalog-1.png" width="68" height="86" alt="Кэт энерджи PRO с курицей 500 г">
+              <img class="catalog__image" src="../source/img/catalog-1.png" width="68" height="86" alt="Кэт энерджи PRO с курицей 500 г">
               <h2 class="catalog__title">Cat Energy PRO 500 г</h2>
               <dl class="catalog__details">
                 <div class="catalog__details-container">
@@ -65,7 +65,7 @@
               <button class="button catalog__button">Заказать</button>
             </li>
             <li class="catalog__item">
-              <img class="catalog__image" src="../images/catalog-2.png" width="84" height="100" alt="Кэт энерджи PRO с курицей 1000 г">
+              <img class="catalog__image" src="../source/img/catalog-2.png" width="84" height="100" alt="Кэт энерджи PRO с курицей 1000 г">
               <h2 class="catalog__title">Cat Energy PRO 1000 г</h2>
               <dl class="catalog__details">
                 <div class="catalog__details-container">
@@ -84,7 +84,7 @@
               <button class="button catalog__button">Заказать</button>
             </li>
             <li class="catalog__item">
-              <img class="catalog__image" src="../images/catalog-3.png" width="68" height="78" alt="Кэт энерджи PRO с рыбой 500 г">
+              <img class="catalog__image" src="../source/img/catalog-3.png" width="68" height="78" alt="Кэт энерджи PRO с рыбой 500 г">
               <h2 class="catalog__title">Cat Energy PRO 500 г</h2>
               <dl class="catalog__details">
                 <div class="catalog__details-container">
@@ -103,7 +103,7 @@
               <button class="button catalog__button">Заказать</button>
             </li>
             <li class="catalog__item">
-              <img class="catalog__image" src="../images/catalog-4.png" width="84" height="100" alt="Кэт энерджи PRO с рыбой 1000 г">
+              <img class="catalog__image" src="../source/img/catalog-4.png" width="84" height="100" alt="Кэт энерджи PRO с рыбой 1000 г">
               <h2 class="catalog__title">Cat Energy PRO 1000 г</h2>
               <dl class="catalog__details">
                 <div class="catalog__details-container">
@@ -122,7 +122,7 @@
               <button class="button catalog__button">Заказать</button>
             </li>
             <li class="catalog__item">
-              <img class="catalog__image" src="../images/catalog-5.png" width="68" height="78" alt="Кэт энерджи SLim с гречкой 500 г">
+              <img class="catalog__image" src="../source/img/catalog-5.png" width="68" height="78" alt="Кэт энерджи SLim с гречкой 500 г">
               <h2 class="catalog__title">Cat Energy SLim 500 г</h2>
               <dl class="catalog__details">
                 <div class="catalog__details-container">
@@ -141,7 +141,7 @@
               <button class="button catalog__button">Заказать</button>
             </li>
             <li class="catalog__item">
-              <img class="catalog__image" src="../images/catalog-6.png" width="84" height="100" alt="Кэт энерджи SLim с гречкой 1000 г">
+              <img class="catalog__image" src="../source/img/catalog-6.png" width="84" height="100" alt="Кэт энерджи SLim с гречкой 1000 г">
               <h2 class="catalog__title">Cat Energy SLim 1000 г</h2>
               <dl class="catalog__details">
                 <div class="catalog__details-container">
@@ -160,7 +160,7 @@
               <button class="button catalog__button">Заказать</button>
             </li>
             <li class="catalog__item">
-              <img class="catalog__image" src="../images/catalog-7.png" width="72" height="84" alt="Кэт энерджи SLim с рисом 500 г">
+              <img class="catalog__image" src="../source/img/catalog-7.png" width="72" height="84" alt="Кэт энерджи SLim с рисом 500 г">
               <h2 class="catalog__title">Cat Energy SLim 500 г</h2>
               <dl class="catalog__details">
                 <div class="catalog__details-container">
@@ -231,7 +231,7 @@
           <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts contacts__catalog">
         <div class="container contacts__container">
           <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>

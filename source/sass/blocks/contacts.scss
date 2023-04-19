@@ -1,25 +1,32 @@
 .contacts {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .contacts__container {
-    display: flex;
-    gap: 2px;
+  display: flex;
+  gap: 2px;
+  padding: 26px 20px;
 }
 
 .contacts__text {
-    font-size: 16px;
-    line-height: 20px;
-    color: #111111;
-    text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+  margin: 0 2px 0 0;
 }
 
 .contacts__address {
-    font-family: "Lato";
-    src: url(../fonts/lato/Lato-Regular.woff2) format("woff2");
-    font-style: normal;
-    font-weight: 400;
-    color: #444444;
-    font-size: 14px;
-    line-height: 18px;
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #444444;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+}
+
+.contacts__form,
+.contacts__catalog {
+  background-color: #f2f2f2;
 }

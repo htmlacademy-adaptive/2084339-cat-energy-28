@@ -1,7 +1,9 @@
 @use "./global.scss";
 @use "./fonts.scss";
+@use "./blocks/container.scss";
+@use "./blocks/button.scss";
 @use "./blocks/header.scss";
-@use "./blocks/body.scss";
+@use "./blocks/page.scss";
 @use "./blocks/program.scss";
 @use "./blocks/features.scss";
 @use "./blocks/about.scss";
@@ -11,3 +13,7 @@
 @use "./blocks/form.scss";
 @use "./blocks/catalog.scss";
 @use "./blocks/gift.scss";
+@use "./blocks/product.scss";
+@use "./blocks/social.scss";
+@use "./blocks/copyright.scss";
+@use "./blocks/site-list.scss";

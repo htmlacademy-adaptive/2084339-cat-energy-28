@@ -1,0 +1,95 @@
+.example {
+  background-color: #eaeaea;
+  display: flex;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0 0 40px 0;
+  padding: 25px 0 0 0;
+  display: flex;
+}
+
+.example__text {
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #444444;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0 0 38px 0;
+  padding: 0;
+  display: flex;
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 20px 0;
+}
+
+.example__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.example__number {
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0 0 8px 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.example__description {
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #444444;
+  font-size: 12px;
+  line-height: 12px;
+  margin: 0;
+}
+
+.example__sum {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.example__image {
+  display: flex;
+  position: relative;
+  margin: 0 0 40px 0;
+}
+
+.example__slider {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.example__arrows {
+  position: absolute;
+  z-index: 1;
+  top: 110px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  padding: 11px 8px;
+  margin: 0;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: #666666 solid 2px;
+}

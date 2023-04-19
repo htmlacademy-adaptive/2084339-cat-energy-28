@@ -1,0 +1,44 @@
+.program__container {
+  background-image: url(../img/index-background.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.program__title {
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  margin: 0 auto 40px 0;
+  font-weight: 400;
+}
+
+.program__name {
+  padding: 27px 0 0 0;
+  margin: 0 0 25px 0;
+  display: flex;
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.program__slogan {
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0 0 39px 0;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.program__intro {
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0 0 39px 0;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 14px;
+}

@@ -1,13 +1,50 @@
 .header {
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-.header__wrapper {
+.header__index {
+
+  @media (min-width: $desktop-width) {
+    background-image: url(../img/index-background.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 720px;
+  }
+}
+
+.header__menu {
   display: flex;
   justify-content: space-between;
+}
+
+.header__wrapper-tablet {
+  @media (min-width: $tablet-width) {
+    margin: 0 0 64px 0;
+  }
 }
 
 .header__toggle {
   background-color: transparent;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 54px 110px 32px 110px;
+  }
 }

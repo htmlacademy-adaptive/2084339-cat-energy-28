@@ -7,7 +7,8 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="header__wrapper container">
+      <div class="header__wrapper header__wrapper-tablet container">
+        <div class="header__menu">
         <a class="header__logo">
           <img
             class="header__image"
@@ -39,15 +40,17 @@
           </li>
         </ul>
       </nav>
+    </div>
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">«Cat Energy» — функциональное питание для котов</h1>
       <section class="program">
-        <div class="container">
+        <div class="container program__form-wrapper">
           <h2 class="program__title">Подбор программы</h2>
           <p class="program__slogan">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form class="program__form form" action="#" method="post">
-            <fieldset class="form__fieldset">
+            <div class="form__fieldset-wrapper">
+            <fieldset class="form__fieldset form__fieldset-desktop">
               <ul class="form__list">
                 <li class="form__item">
                   <label class="form__label-text" for="form-name">Имя:<sup>*</sup></label>
@@ -78,7 +81,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset form__fieldset-desktop">
               <ul class="form__radio-list">
                 <li class="form__radio-item">
                   <label class="form__label-radio">
@@ -112,10 +115,11 @@
                 </li>
               </ul>
             </fieldset>
+          </div>
           <fieldset class="form__fieldset">
               <h2 class="form__title">Контактные данные (владельца кота)</h2>
-                <ul class="form__list">
-                  <li class="form__item">
+                <ul class="form__list form__list-contacts">
+                  <li class="form__item form__item-contacts">
                     <label class="form__label-text" for="contacts-mail">E-mail:<sup>*</sup></label>
                     <input
                       class="form__input-text"
@@ -125,7 +129,7 @@
                       placeholder="kuklachev@gmail.com"
                     />
                   </li>
-                  <li class="form__item">
+                  <li class="form__item form__item-contacts">
                     <label class="form__label-text" for="contacts-phone">Телефон:<sup>*</sup></label>
                     <input
                       class="form__input-text"
@@ -146,8 +150,8 @@
           </fieldset>
           <fieldset class="form__fieldset">
             <h2 class="form__title">Дополнительно</h2>
-              <ul class="form__list">
-                <li class="form__item">
+              <ul class="form__list form__list-checkbox">
+                <li class="form__item form__item-checkbox">
                   <label class="form__label-checkbox">
                     <input
                       class="form__input-checkbox"
@@ -157,7 +161,7 @@
                     <span class="form-checkbox-text">Сахарозаменитель</span>
                   </label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item-checkbox">
                   <label class="form__label-checkbox">
                     <input
                       class="form__input-checkbox"
@@ -167,7 +171,7 @@
                     <span class="form-checkbox-text">Питьевая вода</span>
                   </label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item-checkbox">
                   <label class="form__label-checkbox">
                     <input
                       class="form__input-checkbox"
@@ -177,7 +181,7 @@
                     <span class="form-checkbox-text">Молоко</span>
                   </label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item-checkbox">
                   <label class="form__label-checkbox">
                     <input
                       class="form__input-checkbox"
@@ -189,8 +193,10 @@
                 </li>
               </ul>
             </fieldset>
+            <div class="form__wrapper-tablet">
             <button class="button form__button">Отправить заявку</button>
             <p class="form__add">* — Обязательные поля</p>
+            </div>
           </form>
         </div>
       </section>
@@ -212,7 +218,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container footer__container">
         <a class="footer__logo" href="#">
           <svg
             xmlns="http://www.w3.org/2000/svg"

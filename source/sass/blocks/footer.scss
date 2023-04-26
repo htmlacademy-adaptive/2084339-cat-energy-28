@@ -1,9 +1,23 @@
 .footer {
   background-color: #f2f2f2;
+}
+
+.footer__container {
   margin: 0;
-  padding: 40px 0;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 55px 30px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 110px;
+  }
 }
 
 .footer__logo {
@@ -11,4 +25,10 @@
   justify-content: center;
   margin: 0 0 40px 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
+
+

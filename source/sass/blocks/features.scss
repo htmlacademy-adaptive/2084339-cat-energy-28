@@ -1,17 +1,71 @@
 .features {
   background-color: #ffffff;
+  margin-bottom: 45px;
 }
 
 .features__list {
   list-style: none;
   padding: 0;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .features__item {
-  background-color: #d9d9d9;
-  margin: 0 0 20px 0;
+  background-color: $basic-gray;
   display: flex;
   flex-direction: column;
+  padding: 30px 33px 18px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 316px 53px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    margin: 0;
+  }
+}
+
+.features__item:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+
+.features__item--slim {
+  background-image: url("../img/cat_slim.svg");
+  background-repeat: no-repeat;
+  background-position: 22px 21px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 316px 53px 52px;
+    background-size: 200px 211px;
+    background-position: right 62px top 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 52px 41px;
+    background-size: 100px 106px;
+  }
+}
+
+.features__item--mass {
+  background-image: url("../img/cat_mass.svg");
+  background-repeat: no-repeat;
+  background-position: 13px 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 316px 53px 52px;
+    background-size: 268px 200px;
+    background-position: right 28px top 50%;
+
+    @media (min-width: $desktop-width) {
+      background-position: 33px 47px;
+      background-size: 134px 100px;
+    }
+  }
 }
 
 .features__title {
@@ -20,8 +74,20 @@
   font-size: 24px;
   line-height: 37px;
   margin: 0 0 29px 0;
-  padding: 30px 0 0 90px;
+  padding: 0 0 0 71px;
   display: flex;
+  white-space: nowrap;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 162px;
+    margin: 0 0 73px 0;
+  }
 }
 
 .features__text {
@@ -32,8 +98,17 @@
   font-size: 14px;
   line-height: 18px;
   margin: 0 0 38px 0;
-  padding: 0 33px 0 20px;
+  padding: 0;
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 457px;
+  }
 }
 
 .features__link {
@@ -45,7 +120,7 @@
   color: #000000;
   display: flex;
   margin: 0;
-  padding: 0 0 18px 19px;
+  padding: 0;
 }
 
 .features__icon {

@@ -1,5 +1,6 @@
 .features {
   background-color: #ffffff;
+  margin-bottom: 45px;
 }
 
 .features__list {
@@ -14,8 +15,7 @@
 }
 
 .features__item {
-  background-color: #d9d9d9;
-  margin: 0 0 20px 0;
+  background-color: $basic-gray;
   display: flex;
   flex-direction: column;
   padding: 30px 33px 18px 20px;
@@ -30,8 +30,12 @@
   }
 }
 
+.features__item:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+
 .features__item--slim {
-  background-image: url(../img/cat_slim.svg);
+  background-image: url("../img/cat_slim.svg");
   background-repeat: no-repeat;
   background-position: 22px 21px;
 
@@ -48,7 +52,7 @@
 }
 
 .features__item--mass {
-  background-image: url(../img/cat_mass.svg);
+  background-image: url("../img/cat_mass.svg");
   background-repeat: no-repeat;
   background-position: 13px 24px;
 

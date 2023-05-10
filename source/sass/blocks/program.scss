@@ -1,11 +1,26 @@
 .program__index {
-  background-image: url(../img/index-background.jpg);
+  background-image: url("../img/index-background.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100%;
 
   @media (min-width: $tablet-width) {
     background-image: none;
+  }
+}
+
+.program__index::before {
+  position: absolute;
+  top: -120px;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/index-background-desktop.jpg");
+    background-position: right center;
+    background-repeat: no-repeat;
   }
 }
 
@@ -71,7 +86,7 @@
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
-    width: 323px;
+    max-width: 323px;
     margin: 0 0 66px 0;
   }
 }
@@ -109,7 +124,6 @@
 }
 
 .program__button {
-
   @media (min-width: $tablet-width) {
     width: auto;
     padding: 14px 26px;

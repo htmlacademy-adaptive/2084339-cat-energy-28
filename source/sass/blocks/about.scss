@@ -2,11 +2,6 @@
   background-color: #ffffff;
 }
 
-.about__container {
-  padding-top: 45px;
-  padding-bottom: 47px;
-}
-
 .about__title {
   font-size: 36px;
   line-height: 40px;
@@ -60,19 +55,19 @@
 }
 
 .about__item--healthy {
-  background-image: url(../img/about-1.svg);
+  background-image: url("../img/about-1.svg");
 }
 
 .about__item--powder {
-  background-image: url(../img/about-2.svg);
+  background-image: url("../img/about-2.svg");
 }
 
 .about__item--count {
-  background-image: url(../img/about-3.svg);
+  background-image: url("../img/about-3.svg");
 }
 
 .about__item--time {
-  background-image: url(../img/about-4.svg);
+  background-image: url("../img/about-4.svg");
 }
 
 .about__number {
@@ -104,6 +99,3 @@
     line-height: 24px;
   }
 }
-
-
-

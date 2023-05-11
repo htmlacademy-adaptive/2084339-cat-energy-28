@@ -17,14 +17,14 @@
     <nav class="main-nav">
       <button class="button">Меню сайта</button>
       <ul class="site-list main-nav__list">
-        <li class="site-list__item--current">
+        <li class="site-list__item">
           <a class="site-list__link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
           <a class="site-list__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link site-list__link--current" href="#">Подбор программы</a>
+          <a class="site-list__link site-list__link--current">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -39,22 +39,22 @@
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label">
-                <span class="form__label--text">Имя:*</span>
-                <input class="form__input--text" type="text" name="cat-name" placeholder="Введите имя кота"
+                <span class="form__label-text">Имя:*</span>
+                <input class="form__input" type="text" name="cat-name" placeholder="Введите имя кота"
                   value="Барсик" required>
               </label>
             </li>
             <li class="form__item">
               <label class="form__label">
-                <span class="form__label--text">Вес (кг):*</span>
-                <input class="form__input--text" type="text" name="weight" placeholder="Введите вес кота" value="7"
+                <span class="form__label-text">Вес (кг):*</span>
+                <input class="form__input" type="text" name="weight" placeholder="Введите вес кота" value="7"
                   required>
               </label>
             </li>
             <li class="form__item">
               <label class="form__label">
-                <span class="form__label--text">Возраст (лет):*</span>
-                <input class="form__input--text" type="text" name="age" placeholder="Введите возраст кота" value="7"
+                <span class="form__label-text">Возраст (лет):*</span>
+                <input class="form__input" type="text" name="age" placeholder="Введите возраст кота" value="7"
                   required>
               </label>
             </li>
@@ -66,73 +66,73 @@
             <li class="form__item">
               <label class="form__label">
                 <input class="visually-hidden input-radio" type="radio" name="weight" value="weight" checked>
-                <span class="form__label--text radio">Похудение</span>
+                <span class="form__label-text radio">Похудение</span>
               </label>
             </li>
             <li class="form__item">
               <label class="form__label">
                 <input class="visually-hidden input-radio" type="radio" name="weight" value="0">
-                <span class="form__label--text radio">Набор массы</span>
+                <span class="form__label-text radio">Набор массы</span>
               </label>
             </li>
             <li class="form__item">
               <label class="form__label">
                 <input class="visually-hidden input-radio" type="radio" name="weight" value="0">
-                <span class="form__label--text radio">Не знаю</span>
+                <span class="form__label-text radio">Не знаю</span>
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--contacts">
-          <legend class="form__legend--contacts">Контактные данные (владельца кота)</legend>
+          <legend class="form__legend-contacts">Контактные данные (владельца кота)</legend>
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label">
-                <span class="form__label--text">E-mail:*</span>
-                <input class="form__input--text" type="email" name="user-email" placeholder="kuklachev@gmail.com"
+                <span class="form__label-text">E-mail:*</span>
+                <input class="form__input" type="email" name="user-email" placeholder="kuklachev@gmail.com"
                   required>
               </label>
             </li>
             <li class="form__item">
               <label class="form__label">
-                <span class="form__label--text">Телефон:*</span>
-                <input class="form__input--text" type="tel" name="phone" placeholder="8 (960) 900-60-90" maxlength="20"
+                <span class="form__label-text">Телефон:*</span>
+                <input class="form__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" maxlength="20"
                   pattern="8[0-9]" required>
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend class="form__legend--comment">Комментарий</legend>
+          <legend class="form__legend">Комментарий</legend>
           <label class="form__label">
             <textarea placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--additional">
-          <legend class="additional">Дополнительно</legend>
+          <legend class="form__legend">Дополнительно</legend>
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label">
                 <input class="visually-hidden input-checkbox" type="checkbox" name="option" value="option" checked>
-                <span class="form__label--text checkbox">Сахарозаменитель</span>
+                <span class="form__label-text checkbox">Сахарозаменитель</span>
               </label>
             </li>
             <li class="form__item">
               <label class="form__label">
                 <input class="visually-hidden input-checkbox" type="checkbox" name="option" value="0">
-                <span class="form__label--text checkbox">Питьевая вода</span>
+                <span class="form__label-text checkbox">Питьевая вода</span>
               </label>
             </li>
             <li class="form__item">
               <label class="form__label">
                 <input class="visually-hidden input-checkbox" type="checkbox" name="option" value="0">
-                <span class="form__label--text checkbox">Молоко</span>
+                <span class="form__label-text checkbox">Молоко</span>
               </label>
             </li>
             <li class="form__item">
               <label class="form__label">
                 <input class="visually-hidden input-checkbox" type="checkbox" name="option" value="0">
-                <span class="form__label--text checkbox">Витамины</span>
+                <span class="form__label-text checkbox">Витамины</span>
               </label>
             </li>
           </ul>
@@ -155,27 +155,27 @@
         <img class="footer__logo-image" src="images/footer-logo.svg" width="128" height="24" alt="Лого Cat Energy">
       </div>
     </section>
-    <section class="footer-social">
+    <section class="socials">
       <h2 class="visually-hidden">Социальные сети</h2>
-      <ul class="footer-social__list">
-        <li class="footer-social__item">
-          <a class="footer-social__link" href="https://vk.com/htmlacademy" rel="noopener noreferrer" target="_blank">
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a class="socials__link" href="https://vk.com/htmlacademy" rel="noopener noreferrer" target="_blank">
             <svg width="23" height="16">
               <use xlink:href="images/sprite.svg#vk-icon" />
             </svg>
             <span class="visually-hidden">Vkontakte</span>
           </a>
         </li>
-        <li class="footer-social__item">
-          <a class="footer-social__link" href="https://vk.com/htmlacademy" rel="noopener noreferrer" target="_blank">
+        <li class="socials__item">
+          <a class="socials__link" href="https://vk.com/htmlacademy" rel="noopener noreferrer" target="_blank">
             <svg width="16" height="16">
               <use xlink:href="images/sprite.svg#instagram-icon" />
             </svg>
             <span class="visually-hidden">Instagram</span>
           </a>
         </li>
-        <li class="footer-social__item">
-          <a class="footer-social__link" href="https://vk.com/htmlacademy" rel="noopener noreferrer" target="_blank">
+        <li class="socials__item">
+          <a class="socials__link" href="https://vk.com/htmlacademy" rel="noopener noreferrer" target="_blank">
             <svg width="13" height="20">
               <use xlink:href="images/sprite.svg#facebook-icon" />
             </svg>

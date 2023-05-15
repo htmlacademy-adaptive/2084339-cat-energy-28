@@ -55,6 +55,8 @@
 }
 
 .header__wrapper {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -65,3 +67,4 @@
     padding: 54px 110px 32px 110px;
   }
 }
+

@@ -1,20 +1,37 @@
 .header {
   background-color: #ffffff;
+  min-width: 65px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
 }
 
-.header__menu {
+.header__line {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
 }
 
 .header__wrapper-tablet {
   @media (min-width: $tablet-width) {
     margin: 0 0 64px 0;
+  }
+}
+
+.header__logo{
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
@@ -24,6 +41,16 @@
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.header__toggle{
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 

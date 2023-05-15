@@ -2,10 +2,10 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     flex-direction: row;
     vertical-align: middle;
   }
@@ -22,12 +22,35 @@
   white-space: nowrap;
 
   @media (min-width: $tablet-width) {
-    padding: 0 17px;
+    margin: 0 17px;
+    padding: 0;
   }
+}
+
+.site-list__link:hover {
+  opacity: 0.6;
+}
+
+.site-list__link:active {
+  opacity: 0.3;
 }
 
 .site-list__link-index {
   @media (min-width: $desktop-width) {
     color: #ffffff;
   }
+}
+
+.site-list__link-current {
+  position: relative;
+}
+
+.site-list__link-current::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -8px;
+  left: 0;
+  background: $green;
 }

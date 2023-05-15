@@ -121,8 +121,25 @@
   display: flex;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
-.features__icon {
-  margin-left: 15px;
+.features__link::before {
+  content: url("../img/icon-arrow.svg");
+  position: absolute;
+  left: 108px;
+  top: -2px;
+  width: 24px;
+  height: 12px;
+}
+
+.features__link:hover::before {
+  content: url("../img/icon-arrow-big.svg");
+  width: 32px;
+}
+
+.features__link:active::before {
+  content: url("../img/icon-arrow-big.svg");
+  width: 32px;
+  opacity: 0.3;
 }

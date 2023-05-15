@@ -1,11 +1,54 @@
 .product__list {
   list-style: none;
-  margin: 0;
+  margin: 0 0 15px 0;
   padding: 0;
+  display: flex;
+  flex-direction: row-reverse;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    padding: 15px 0;
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.product__title {
+  font-weight: 400;
 }
 
 .product__title-add {
-  margin-bottom: 50px;
+  margin-bottom: 36px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 80px 0;
+  }
+}
+
+.product__title-add::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -22px;
+  width: 286px;
+  height: 30px;
+  background: #ffffff;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    width: 446px;
+    left: -37px;
+  }
 }
 
 .product__list-add {
@@ -16,12 +59,24 @@
 }
 
 .product__item {
+  padding: 13px 0 19px 0;
+  border-bottom: 1px solid #cdcdcd;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid #cdcdcd;
+    border-top: none;
+    padding: 27px 38px;
+    grid-template-columns: auto 160px 90px;
+  }
+
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    grid-template-columns: 325px 243px 82px auto;
     align-items: center;
     padding: 15px 0;
     margin: 0;
+    border: none;
     border-bottom: 1px solid #cdcdcd;
   }
 }
@@ -31,23 +86,147 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
+  margin: 0 0 13px 0;
+  grid-column: 1 / -1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    grid-column: 1 / 2;
+  }
 }
 
-.product__list {
-  display: flex;
-  justify-content: space-between;
+.product__price,
+.product__count {
   font-family: "Lato", "Arial", sans-serif;
+  margin: 0 0 15px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+.product__price {
+  @media (max-width: $desktop-width) {
+    text-align: end;
+  }
 }
 
 .product__container {
   @media (min-width: $desktop-width) {
-    width: 896px;
-    padding: 0;
+    max-width: 1440px;
+    padding: 75px 110px 86px 110px;
   }
 }
 
 .product__button {
+  grid-column: 1 / -1;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 22px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 244px;
+    grid-column: 4 / -1;
+    margin: 0;
+  }
+}
+
+.product__gift--wrapper {
+  background-image: url("../img/case-cat.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 290px;
+  display: flex;
+  margin: 35px 0;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    height: 200px;
+    margin: 69px 0 76px 0;
+  }
+
+  @media (max-width: $desktop-width) {
+    background-size: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}
+
+.product__gift--wrapper::before {
+  content: url("../img/gift.svg");
+  position: absolute;
+  top: 59px;
+  left: 40%;
+  width: 78px;
+  height: 80px;
+
+  @media (min-width: $tablet-width) {
+    top: 57px;
+    left: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 55px;
+    left: 84px;
+  }
+}
+
+.product__gift--text {
+  width: 161px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  margin: 187px auto 43px auto;
+  font-family: "Lato", "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    background-size: 100%;
+    text-align: left;
+    margin: 70px 124px 70px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto auto 43px auto;
+    text-align: center;
+  }
+}
+
+
+.product__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 895px 1fr;
+    gap: 80px;
+  }
+}
+
+.product {
+  position: relative;
+}
+
+.product::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 22px;
+  right: 0;
+  background: $green;
+  z-index: -2;
+
+  @media (min-width: $desktop-width) {
+    top: 97px;
   }
 }

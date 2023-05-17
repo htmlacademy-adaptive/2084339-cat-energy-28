@@ -115,65 +115,25 @@
 
 .form__title-add {
   @media (min-width: $tablet-width) {
-    margin: 0 0 57px 0;
+    margin: 0 0 62px 0;
   }
 }
 
-.form__title-contacts,
-.form__title-comment,
-.form__title-add {
+.form__title-line {
   position: relative;
-}
-
-.form__title-contacts::before,
-.form__title-comment::before,
-.form__title-add::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -22px;
+  padding: 0 20px;
+  display: inline-block;
   background: #ffffff;
-  z-index: -1;
+  left: -22px;
 
   @media (min-width: $tablet-width) {
-    width: 280px;
-    left: -39px;
-  }
-}
-
-.form__title-contacts::before {
-  width: 242px;
-  height: 60px;
-
-  @media (min-width: 380px) {
-    width: 357px;
+    padding: 0 37px;
+    left: -37px;
   }
 
-  @media (min-width: 435px) {
-    width: 410px;
-    height: 35px;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 627px;
-  }
-}
-
-.form__title-comment::before {
-  width: 176px;
-  height: 36px;
-
-  @media (min-width: $tablet-width) {
-    width: 270px;
-  }
-}
-
-.form__title-add::before {
-  width: 200px;
-  height: 36px;
-
-  @media (min-width: $tablet-width) {
-    width: 308px;
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+    left: -40px;
   }
 }
 
@@ -280,6 +240,7 @@
   width: 100%;
   font-family: "Oswald", "Arial", sans-serif;
   border: 1px solid #e7e7e7;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -293,7 +254,32 @@
 }
 
 .form__input-text:focus {
-  border: 1px solid #444444;
+  border: 2px solid #444444;
+  outline: none;
+}
+
+.form__input-mail,
+.form__input-phone {
+  position: relative;
+}
+
+.form__input-mail::before {
+  content: url("../img/mail.svg");
+  position: absolute;
+  top: 16px;
+  left: 94%;
+  width: 17px;
+  height: 13px;
+  z-index: 2;
+}
+
+.form__input-phone::before {
+  content: url("../img/phone.svg");
+  position: absolute;
+  top: 15px;
+  right: 16px;
+  width: 15px;
+  height: 15px;
 }
 
 .form__input-radio,
@@ -327,6 +313,21 @@
     top: 10px;
     left: 10px;
   }
+}
+
+input::placeholder {
+  color: #444444;
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__input-error {
+  border: 2px solid #FF8282;
 }
 
 .form__radio-mark {

@@ -13,7 +13,11 @@
 
 .example__container {
   padding-top: 43px;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 100px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;

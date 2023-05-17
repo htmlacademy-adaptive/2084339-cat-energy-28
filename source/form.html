@@ -10,7 +10,7 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="header__wrapper container">
+      <div class="header__wrapper header__wrapper-form container">
         <div class="header__line">
           <a class="header__logo">
             <img
@@ -92,7 +92,8 @@
                       class="visually-hidden form__input-radio"
                       type="radio"
                       name="catalog"
-                      value="weight-loss"/>
+                      value="weight-loss"
+                      checked/>
                     <span class="form__radio-mark"></span>
                     <span class="form__radio-text">Похудение</span>
                   </label>
@@ -127,7 +128,7 @@
               <div class="container program__form-wrapper">
               <h2 class="form__title form__title-contacts form__title-line">Контактные данные (владельца кота)</h2>
                 <ul class="form__list form__list-contacts">
-                  <li class="form__item form__item-contacts">
+                  <li class="form__item form__item-contacts form__input-mail">
                     <label class="form__label-text" for="contacts-mail">E-mail:<sup>*</sup></label>
                     <input
                       class="form__input-text"
@@ -137,10 +138,10 @@
                       placeholder="kuklachev@gmail.com"
                     />
                   </li>
-                  <li class="form__item form__item-contacts">
+                  <li class="form__item form__item-contacts form__input-phone">
                     <label class="form__label-text" for="contacts-phone">Телефон:<sup>*</sup></label>
                     <input
-                      class="form__input-text"
+                      class="form__input-text form__input-text-phone"
                       type="text"
                       id="contacts-phone"
                       name="phone"
@@ -169,6 +170,7 @@
                       class="visually-hidden form__input-checkbox"
                       type="checkbox"
                       name="sweetener"
+                      checked
                     />
                     <span class="form__checkbox-mark"></span>
                     <span class="form-checkbox-text">Сахарозаменитель</span>

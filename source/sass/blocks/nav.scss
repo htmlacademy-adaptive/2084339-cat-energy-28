@@ -10,7 +10,7 @@
   position: relative;
 }
 
-.main-nav--opened::before{
+.main-nav--opened::before {
   content: "";
   position: absolute;
   top: -34px;
@@ -25,7 +25,7 @@
   }
 }
 
-.main-nav--opened::after{
+.main-nav--opened::after {
   content: "";
   position: absolute;
   top: -34px;

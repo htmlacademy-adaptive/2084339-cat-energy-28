@@ -190,7 +190,7 @@
     width: 185px;
     text-align: right;
     margin: 0;
-    font-size:20px;
+    font-size: 20px;
     line-height: 20px;
   }
 
@@ -212,7 +212,6 @@
 
 .example__left,
 .example__right {
-
   @media (min-width: $tablet-width) {
     width: 280px;
     height: 512px;

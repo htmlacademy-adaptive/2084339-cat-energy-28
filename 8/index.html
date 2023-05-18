@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Интернет-магазин Кэт энерджи</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <base href="https://htmlacademy-adaptive.github.io/2084339-cat-energy-28/8/">
+</head>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__wrapper container">
+        <div class="header__line">
+          <a class="header__logo">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img
+                class="header__image"
+                src="img/logo-group.svg"
+                alt="Логотип «Cat Energy»"
+                width="191"
+                height="38"
+              />
+            </picture>
+          </a>
+          <button class="header__toggle header-main__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <svg class="header__menu header-main__menu" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
+              <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
+              <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
+            </svg>
+          </button>
+        </div>
+        <nav class="main-nav main-nav--opened">
+          <ul class="nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link-current site-list__link-index" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link-index" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link-index" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-container">
+      <h1 class="visually-hidden">«Cat Energy» — функциональное питание для котов</h1>
+      <section class="program__index">
+        <div class="container program__container">
+          <h2 class="program__name">Функциональное питание для котов</h2>
+          <p class="program__intro">Занялся собой? Займись котом!</p>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.png 1x, img/index-can-tablet@2x.png 2x">
+          <img
+            class="program__image"
+            src="img/index-can-phone@1x.png"
+            srcset="img/index-can-phone@2x.png 2x"
+            width="280"
+            height="270"
+            alt="Кэт Энерджи PRO Курица"
+          >
+          </picture>
+          <a class="program__button button" href="#">Подобрать программу</a>
+        </div>
+      </section>
+      <section class="features">
+        <div class="container">
+          <h2 class="visually-hidden">Линейки продукции</h2>
+          <ul class="features__list">
+            <li class="features__item features__item--slim">
+              <p class="features__title">Похудение</p>
+              <p class="features__text">
+                Ваш кот весит больше собаки и почти утратил способность лазить
+                по деревьям? Пора на диету! Cat Energy Slim поможет вашему
+                питомцу сбросить лишний вес.
+              </p>
+              <a class="features__link" href="#">
+                <span class="features__name">Каталог Slim</span>
+              </a>
+            </li>
+            <li class="features__item features__item--mass">
+              <p class="features__title">Набор массы</p>
+              <p class="features__text">
+                Заработать авторитет среди дворовых котов и даже собак? Серия
+                Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+              </p>
+              <a class="features__link" href="#">
+                <span class="features__name">Каталог Pro</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container about__container">
+          <h2 class="about__title">Как это работает</h2>
+          <ul class="about__list">
+            <li class="about__item about__item--healthy">
+              <span class="about__number">1</span>
+              <p class="about__text">
+                Функциональное питание содержит только полезные питательные
+                вещества.
+              </p>
+            </li>
+            <li class="about__item about__item--powder">
+              <span class="about__number">2</span>
+              <p class="about__text">
+                Выпускается в виде порошка, который нужно лишь залить кипятком и
+                готово.
+              </p>
+            </li>
+            <li class="about__item about__item--count">
+              <span class="about__number">3</span>
+              <p class="about__text">
+                Замените один-два приема обычной еды на наше функциональное
+                питание.
+              </p>
+            </li>
+            <li class="about__item about__item--time">
+              <span class="about__number">4</span>
+              <p class="about__text">
+                Уже через месяц наслаждайтесь изменениями к лучшему вашего
+                питомца!
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="example">
+        <div class="container example__container">
+          <div class="example__wrapper-desktop">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__text">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
+            Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
+            этом он не менял своих привычек и по-прежнему спит по 16 часов в
+            день. Уже через месяц наслаждайтесь изменениями к лучшему вашего
+            питомца!
+          </p>
+          <div class="example__info">
+            <dl class="example__list">
+              <div class="example__item">
+                <dt class="example__number">5 кг</dt>
+                <dd class="example__description">снижение веса</dd>
+              </div>
+              <div class="example__item">
+                <dt class="example__number">60 дней</dt>
+                <dd class="example__description">затрачено времени</dd>
+              </div>
+            </dl>
+            <p class="example__sum">Затраты на питание: 15 000 РУБ.</p>
+          </div>
+          </div>
+          <div class="example__image-wrapper">
+          <div class="example__image">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-before-tablet@1x.png 1x, img/cat-before-tablet@2x.png 2x">
+            <img
+              class="example__left"
+              src="img/cat-before-phone@1x.png"
+              srcset="img/cat-before-phone@2x.png 2x"
+              width="140"
+              height="256"
+              alt="Фото До"
+            />
+            </picture>
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-after-tablet@1x.png 1x, img/cat-after-tablet@2x.png 2x">
+            <img
+              class="example__right"
+              src="img/cat-after-phone@1x.png"
+              srcset="img/cat-after-phone@2x.png 2x"
+              width="140"
+              height="256"
+              alt="Фото После"
+            />
+            </picture>
+          </div>
+            <button class="example__slider">
+              <svg class="example__arrows" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 0L0 9L8 18V0Z" fill="#666666"/>
+                <path d="M24 9L16 0V18L24 9Z" fill="#666666"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="container contacts__container">
+          <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+          <div class="contacts__address">
+          <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="contacts__city">Санкт-Петербург</p>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <iframe
+            class="contacts__map-link"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+            width="320"
+            height="362"
+            allowfullscreen
+            title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <a class="footer__logo" href="#">
+          <svg class="footer__logo-image" xmlns="http://www.w3.org/2000/svg" width="129" height="24" fill="none"><g fill="currentColor" clip-path="url(#a)"><path d="M2.1 22.05a9.5 9.5 0 0 1-1.6-5.74V7.79A9.63 9.63 0 0 1 2 1.95C3.1.62 4.8 0 7.31 0c2.5 0 4.1.62 5.1 1.74a7.49 7.49 0 0 1 1.51 5.03v2.05h-4.9V6.46c.03-.7-.07-1.4-.3-2.05a1.46 1.46 0 0 0-.59-.63 1.41 1.41 0 0 0-.82-.19c-.7 0-1.2.2-1.4.72-.23.73-.33 1.49-.3 2.25v10.98c-.05.74.08 1.48.4 2.15.2.52.7.72 1.4.72s1.1-.2 1.3-.72c.23-.7.33-1.42.3-2.15v-2.46h4.91v2.05a7.98 7.98 0 0 1-1.5 5.13c-1 1.23-2.7 1.84-5.1 1.84-2.41-.1-4.22-.72-5.22-2.05ZM19.83.3h5.7l4.22 23.4h-4.61l-.8-4.93h-3.3l-.8 4.92h-4.72L19.83.31Zm4.1 15.4-1.2-9.14-1.2 9.13h2.4ZM33.25 4.2h-3.4V.3h11.91v3.8h-3.4v19.6h-5.1V4.2ZM50.88.3h8.81v2.47H54v7.7h4.6v2.35H54v8.62h5.7v2.35h-8.91V.31h.1ZM62.3.3h2.2l6.51 15.5V.3h2.6v23.4h-2l-6.6-16v16H62.3V.3ZM76.62.3h8.81v2.47h-5.7v7.7h4.6v2.35h-4.6v8.62h5.7v2.35h-8.81V.31ZM88.04.3h4.6a7.87 7.87 0 0 1 5.11 1.44c1.1.93 1.6 2.57 1.6 4.72 0 2.98-.9 4.82-2.8 5.44l3.2 11.69h-3.1l-3-10.97h-2.5v10.97h-3.21V.31h.1Zm4.4 10.06a4.3 4.3 0 0 0 2.9-.82c.6-.51.91-1.54.91-3.08a6.77 6.77 0 0 0-.3-2.25 2.58 2.58 0 0 0-1.1-1.24 4.47 4.47 0 0 0-2.2-.4h-1.4v7.69h1.2v.1ZM103.36 21.95a10.57 10.57 0 0 1-1.4-5.95V8.2c-.03-1.48.14-2.96.5-4.4a5.2 5.2 0 0 1 1.9-2.67c1.12-.68 2.41-1 3.7-.92 2.11 0 3.61.5 4.52 1.64a7.98 7.98 0 0 1 1.4 5.12v.82h-3v-.71c0-.86-.07-1.72-.2-2.57a2.06 2.06 0 0 0-.8-1.33 3.04 3.04 0 0 0-1.91-.51 2.96 2.96 0 0 0-2 .61 2.3 2.3 0 0 0-.8 1.64c-.14.92-.2 1.85-.2 2.77v8.72a9.53 9.53 0 0 0 .6 3.9c.4.82 1.2 1.13 2.4 1.13a2.37 2.37 0 0 0 2.4-1.23c.53-1.3.77-2.7.7-4.1v-1.65h-2.9V12.1h5.8v11.6h-2l-.3-2.67c-.26.89-.8 1.67-1.55 2.2-.74.55-1.64.81-2.55.77a4.9 4.9 0 0 1-4.3-2.05ZM120.49 15.49 115.58.4h3l3.51 11.28 3.4-11.28h3.01l-4.9 15.08v8.2h-3.01v-8.2h-.1Z"/></g><defs><clipPath id="a"><path fill="currentColor" d="M.5 0h128v24H.5z"/></clipPath></defs></svg>
+        </a>
+        <div class="footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <svg width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.5 2.33876C0.5 1.48373 1.0151 1.02268 2.04531 0.955621L6.01515 0.980769C6.28158 0.980769 6.45921 1.10651 6.54802 1.35799C6.95655 2.61538 7.41392 3.70094 7.92014 4.61465C8.42637 5.52835 9.08801 6.58038 9.90507 7.77071C9.97611 7.9216 10.0916 7.99704 10.2514 7.99704C10.3758 7.99704 10.4735 7.93836 10.5445 7.82101L10.6244 7.54438L10.6511 3.19379C10.6511 2.89201 10.5756 2.69083 10.4246 2.59024C10.2736 2.48965 9.99388 2.4142 9.58535 2.36391C9.26563 2.31361 9.10577 2.12919 9.10577 1.81065C9.10577 1.74359 9.11465 1.69329 9.13241 1.65976C9.50542 0.57002 10.5711 0.0251479 12.3296 0.0251479L13.8216 0C14.4966 0 15.0561 0.15927 15.5001 0.477811C15.9442 0.796351 16.1662 1.29931 16.1662 1.98669V7.69527C16.2906 7.77909 16.406 7.82101 16.5126 7.82101C16.779 7.82101 17.0099 7.67012 17.2053 7.36834C19.1592 4.78649 20.216 3.05966 20.3759 2.18787C20.3759 2.1711 20.3936 2.12919 20.4291 2.06213C20.5535 1.81065 20.7577 1.5927 21.0419 1.40828C21.3261 1.22387 21.5748 1.09813 21.788 1.03107C21.859 0.997535 21.9389 0.980769 22.0277 0.980769H26.1574L26.4239 1.00592C26.7791 1.00592 27.0544 1.16519 27.2498 1.48373C27.3209 1.58432 27.3697 1.69329 27.3964 1.81065C27.423 1.92801 27.4408 2.04536 27.4496 2.16272C27.4585 2.28008 27.463 2.34714 27.463 2.36391V2.53994C27.3386 3.22732 27.0233 3.9608 26.5171 4.74038C26.0109 5.51997 25.367 6.36243 24.5855 7.26775C23.804 8.17308 23.3155 8.76825 23.1201 9.05326C22.9603 9.25444 22.8803 9.43886 22.8803 9.60651C22.8803 9.74063 22.9514 9.89152 23.0935 10.0592L26.9834 14.6864C27.1965 14.9546 27.3031 15.248 27.3031 15.5666C27.3031 15.9522 27.1432 16.2707 26.8235 16.5222C26.5038 16.7737 26.1219 16.9162 25.6779 16.9497L25.2249 16.9749H21.1752C21.1574 16.9749 21.1219 16.979 21.0686 16.9874C21.0153 16.9958 20.9798 17 20.962 17C20.5712 17 20.2071 16.8407 19.8696 16.5222C19.7453 16.3881 18.9105 15.3989 17.3652 13.5547C17.2764 13.4374 17.152 13.3284 16.9922 13.2278C16.9211 13.4961 16.8279 13.8817 16.7124 14.3846C16.597 14.8876 16.5126 15.248 16.4593 15.466L16.3794 15.8935C16.2018 16.4803 15.8287 16.8323 15.2604 16.9497L14.8874 16.9749H12.2763C10.8021 16.9749 9.33224 16.3378 7.86686 15.0636C6.40148 13.7894 5.08264 12.1423 3.91034 10.122C2.73803 8.10182 1.64566 5.75049 0.633216 3.06805C0.544405 2.8501 0.5 2.607 0.5 2.33876ZM16.5126 8.85207C16.1396 8.85207 15.8021 8.75567 15.5001 8.56287C15.1982 8.37007 15.0472 8.10602 15.0472 7.77071V1.98669C15.0472 1.65138 14.9584 1.41248 14.7808 1.26997C14.6032 1.12747 14.2923 1.05621 13.8483 1.05621L12.3296 1.10651C11.5658 1.10651 10.9886 1.23225 10.5978 1.48373C11.3793 1.8358 11.7701 2.40582 11.7701 3.19379V7.61982C11.7346 8.03895 11.5569 8.38683 11.2372 8.66346C10.9175 8.94009 10.5623 9.0784 10.1715 9.0784C9.63863 9.0784 9.2301 8.83531 8.94591 8.34911C7.56046 6.37081 6.53025 4.4931 5.85529 2.71598L5.6155 2.06213L2.07195 2.03698C1.84104 2.03698 1.71227 2.04956 1.68562 2.0747C1.65898 2.09985 1.64566 2.1711 1.64566 2.28846C1.64566 2.43935 1.66342 2.59862 1.69895 2.76627L2.25845 4.17456C3.75048 7.81262 5.37127 10.6795 7.12085 12.7751C8.87042 14.8708 10.5889 15.9186 12.2763 15.9186H14.9406C15.0472 15.9186 15.1271 15.8893 15.1804 15.8306C15.2337 15.7719 15.2781 15.6588 15.3136 15.4911L15.3669 15.2396L15.8732 13.0266C16.0152 12.7249 16.1396 12.5237 16.2462 12.4231C16.4415 12.2387 16.6725 12.1465 16.9389 12.1465C17.3652 12.1465 17.8003 12.3895 18.2444 12.8757L20.5091 15.5917C20.6512 15.8097 20.8022 15.9186 20.962 15.9186H25.3581C25.891 15.9186 26.1574 15.7929 26.1574 15.5414C26.1574 15.4576 26.1308 15.3738 26.0775 15.2899L22.2142 10.7382C21.9123 10.3861 21.7613 10.0089 21.7613 9.60651C21.7613 9.20414 21.9034 8.81854 22.1876 8.4497C22.4185 8.1144 22.867 7.55695 23.5331 6.77737C24.1992 5.99778 24.7809 5.26849 25.2782 4.5895C25.7756 3.9105 26.1042 3.29438 26.264 2.74112L26.3439 2.4142C26.3262 2.38067 26.3173 2.32618 26.3173 2.25074C26.3173 2.1753 26.3084 2.11243 26.2907 2.06213H22.1077C21.8412 2.16272 21.6281 2.31361 21.4682 2.51479L21.3084 2.9926C20.8643 4.14941 19.7009 5.93491 17.8181 8.34911C17.4451 8.68442 17.0099 8.85207 16.5126 8.85207Z" fill="currentColor"/>
+                  </svg>
+                <span class="visually-hidden">Мы в Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="19" fill="none"><path fill="currentColor" d="m16.35 8.8-5.24-3.5a.65.65 0 0 0-1.01.55v6.98a.65.65 0 0 0 1.01.54l5.24-3.49a.65.65 0 0 0 0-1.09Zm-4.94 2.8V7.08l3.4 2.27-3.4 2.27Zm12.48-8.56a2.4 2.4 0 0 0-1.45-1.63C18.72-.02 12.75 0 12.5 0S6.28-.02 2.56 1.4a2.4 2.4 0 0 0-1.45 1.64 25.32 25.32 0 0 0-.61 6.3c0 3.26.33 5.22.61 6.3a2.4 2.4 0 0 0 1.45 1.63c3.72 1.43 9.69 1.4 9.94 1.4h.08c.75 0 6.31-.04 9.86-1.4a2.4 2.4 0 0 0 1.45-1.64c.28-1.07.61-3.03.61-6.3 0-3.25-.33-5.22-.61-6.29Zm-1.27 12.27a1.1 1.1 0 0 1-.65.74c-3.5 1.34-9.4 1.32-9.47 1.32-.07 0-5.98.02-9.47-1.32a1.09 1.09 0 0 1-.65-.74c-.27-1-.57-2.85-.57-5.97 0-3.12.3-4.97.57-5.97a1.1 1.1 0 0 1 .65-.74c3.5-1.34 9.4-1.32 9.47-1.32.07 0 5.98-.02 9.47 1.32a1.1 1.1 0 0 1 .65.74c.27 1 .57 2.85.57 5.97 0 3.12-.3 4.96-.57 5.97Z"/></svg>
+                <span class="visually-hidden">Мы в Ютубе</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9608 0.152905C20.1393 0.302216 20.2255 0.534898 20.1872 0.764481L17.5611 16.5214C17.5244 16.7411 17.3789 16.9273 17.1745 17.0159C16.97 17.1045 16.7346 17.0833 16.5493 16.9597L8.67082 11.7074C8.51771 11.6054 8.41447 11.4437 8.38624 11.2619C8.358 11.08 8.40738 10.8947 8.52233 10.751L11.133 7.48773L6.77303 10.3944C6.577 10.525 6.32597 10.5407 6.11524 10.4353L0.862931 7.80915C0.627693 7.69153 0.485347 7.44488 0.5012 7.18235C0.517052 6.91983 0.688044 6.6921 0.935726 6.60364L19.3188 0.0382579C19.538 -0.0400244 19.7822 0.00359465 19.9608 0.152905ZM2.82626 7.32275L6.36168 9.09046L13.9231 4.0495C14.1925 3.86994 14.5525 3.91349 14.7712 4.1521C14.99 4.3907 15.0022 4.75314 14.8 5.00591L9.99502 11.0121L16.4328 15.3039L18.7083 1.65058L2.82626 7.32275Z" fill="currentColor"/>
+                </svg>
+                <span class="visually-hidden">Мы в Телеграме</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__text">HTML Academy</p>
+            <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,5 +1,6 @@
 .about {
   background-color: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .about__title {
@@ -12,7 +13,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin: 0 auto 52px 0;
+    margin: 0 auto 72px 0;
   }
 }
 
@@ -25,6 +26,7 @@
 
   @media (min-width: $tablet-width) {
     gap: 137px;
+    margin-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
@@ -97,5 +99,6 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    z-index: 1;
   }
 }

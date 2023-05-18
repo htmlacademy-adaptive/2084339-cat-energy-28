@@ -1,12 +1,31 @@
+.catalog__container {
+  padding: 0;
+  width: 100%;
+  margin: 27px auto 25px auto;
+  max-width: 1440px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    margin: 0 auto 68px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    margin: 0 auto 75px auto;
+  }
+}
+
 .catalog__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  border-top: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+    border-top: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,9 +40,20 @@
   color: #000000;
   margin: 0 auto 40px 0;
   font-weight: 400;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 82px 0;
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 40px;
+    margin-bottom: 90px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 20px;
+    margin-bottom: 85px;
   }
 }
 
@@ -31,12 +61,20 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
+  padding: 19px 20px 25px 20px;
+  border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     padding: 0 36px 39px 36px;
-    background-color: #eaeaea;
+    background: linear-gradient(#ffffff 73px, #eaeaea 73px);
+  }
+}
+
+.catalog__item--last {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    background: linear-gradient(#ffffff 47px, #eaeaea 47px);
   }
 }
 
@@ -47,21 +85,36 @@
 
 .catalog__title {
   grid-column: 2 / -1;
-  margin: 0;
+  margin: 0 0 14px 0;
   padding: 0;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  max-width: 76px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 159px;
+    margin: 0 auto 21px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 21px;
+    max-width: 145px;
+    margin: 0 auto 14px auto;
   }
 }
 
 .catalog__title-add {
-  padding-top: 53px;
-  padding-bottom: 8px;
+  max-width: 100%;
+  margin: 0 auto 14px auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 23px auto;
+  }
 }
 
 .catalog__button {
@@ -75,13 +128,25 @@
 .catalog__details {
   grid-column: 2 / -1;
   font-family: "Lato", "Arial", sans-serif;
+  margin: 0 0 22px 0;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid #cdcdcd;
+    margin: 0 0 32px 0;
+    font-size: 16px;
+  }
 }
 
 .catalog__details-container {
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-between;
-  margin-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    padding: 9px 0;
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
 
 .catalog__description {
@@ -102,30 +167,82 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding-top: 78px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     background: transparent;
     padding-top: 161px;
+    border: 2px solid #f2f2f2;
+    margin-top: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 74px;
+  }
+}
+
+.catalog__title-add::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  width: 2px;
+  height: 30px;
+  background: #d3d3d3;
+
+  @media (min-width: $tablet-width) {
+    top: 52px;
+    left: 50%;
+    height: 60px;
+  }
+}
+
+.catalog__title-add::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  width: 2px;
+  height: 30px;
+  background: #d3d3d3;
+  transform: rotate(90deg);
+
+  @media (min-width: $tablet-width) {
+    top: 52px;
+    left: 50%;
+    height: 60px;
   }
 }
 
 .catalog__text-add {
-  margin-bottom: 21px;
+  margin: 0 0 21px 0;
   font-family: "Lato", "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    max-width: 165px;
+    margin: 0 auto 87px auto;
+  }
 }
 
 .catalog__more-button {
   background-color: #f2f2f2;
   color: #444444;
-  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin: auto auto 0 auto;
+  }
 }
 
-.catalog__wrapper-desktop {
-  @media (min-width: $desktop-width) {
-    display: flex;
-    gap: 79px;
-    padding: 81px 110px 86px 110px;
-  }
+.catalog__more-button:hover {
+  background-color: #ebebeb;
+}
+
+.catalog__more-button:active {
+  background-color: #ebebeb;
+  color: rgba(68, 68, 68, 0.3)
 }

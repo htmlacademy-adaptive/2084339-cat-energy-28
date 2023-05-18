@@ -10,3 +10,15 @@
     margin: 0;
   }
 }
+
+.social__link {
+  color: #666666;
+}
+
+.social__link:hover {
+  color: #68B738;
+}
+
+.social__link:active {
+  color: rgba(104, 183, 56, 0.3);
+}

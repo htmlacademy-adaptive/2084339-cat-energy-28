@@ -5,29 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Интернет-магазин Кэт энерджи</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="header__wrapper header__wrapper-tablet container">
-        <div class="header__menu">
-        <a class="header__logo">
-          <img
-            class="header__image"
-            src="img/logo-group.svg"
-            alt="Логотип «Cat Energy»"
-            width="191"
-            height="38"
-          />
-        </a>
-        <button class="header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <svg class="header__menu" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
-            <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
-            <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
-          </svg>
-        </button>
-      </div>
+      <div class="header__wrapper header__wrapper-form container">
+        <div class="header__line">
+          <a class="header__logo">
+            <img
+              class="header__image"
+              src="img/logo-group.svg"
+              alt="Логотип «Cat Energy»"
+              width="191"
+              height="38"
+            />
+          </a>
+          <button class="header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <svg class="header__menu" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
+              <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
+              <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
+            </svg>
+          </button>
+        </div>
       <nav class="nav">
         <ul class="nav__list site-list">
           <li class="site-list__item">
@@ -51,7 +53,7 @@
           <p class="program__slogan">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form class="program__form form" action="#" method="post">
             <div class="form__fieldset-wrapper">
-            <fieldset class="form__fieldset form__fieldset-desktop">
+            <fieldset class="form__fieldset form__fieldset-info form__fieldset-desktop">
               <ul class="form__list">
                 <li class="form__item">
                   <label class="form__label-text" for="form-name">Имя:<sup>*</sup></label>
@@ -82,45 +84,51 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form__fieldset form__fieldset-desktop">
+            <fieldset class="form__fieldset form__fieldset-radio form__fieldset-desktop">
               <ul class="form__radio-list">
                 <li class="form__radio-item">
                   <label class="form__label-radio">
                     <input
-                      class="form__input-radio"
+                      class="visually-hidden form__input-radio"
                       type="radio"
                       name="catalog"
-                      value="weight-loss"/>
+                      value="weight-loss"
+                      checked/>
+                    <span class="form__radio-mark"></span>
                     <span class="form__radio-text">Похудение</span>
                   </label>
                 </li>
                 <li class="form__radio-item">
                   <label class="form__label-radio">
                     <input
-                      class="form__input-radio"
+                      class="visually-hidden form__input-radio"
                       type="radio"
                       name="catalog"
                       value="weight-gain"/>
+                    <span class="form__radio-mark"></span>
                     <span class="form__radio-text">Набор массы</span>
                   </label>
                 </li>
                 <li class="form__radio-item">
                   <label class="form__label-radio">
                     <input
-                      class="form__input-radio"
+                      class="visually-hidden form__input-radio"
                       type="radio"
                       name="catalog"
                       value="need-advice"/>
+                    <span class="form__radio-mark"></span>
                     <span class="form__radio-text">Не знаю (Нужен ваш совет)</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <fieldset class="form__fieldset">
-              <h2 class="form__title">Контактные данные (владельца кота)</h2>
+        </div>
+          <fieldset class="form__fieldset form__fieldset-contacts form__fieldset-line">
+              <div class="container program__form-wrapper">
+              <h2 class="form__title form__title-contacts form__title-line">Контактные данные (владельца кота)</h2>
                 <ul class="form__list form__list-contacts">
-                  <li class="form__item form__item-contacts">
+                  <li class="form__item form__item-contacts form__input-mail">
                     <label class="form__label-text" for="contacts-mail">E-mail:<sup>*</sup></label>
                     <input
                       class="form__input-text"
@@ -130,10 +138,10 @@
                       placeholder="kuklachev@gmail.com"
                     />
                   </li>
-                  <li class="form__item form__item-contacts">
+                  <li class="form__item form__item-contacts form__input-phone">
                     <label class="form__label-text" for="contacts-phone">Телефон:<sup>*</sup></label>
                     <input
-                      class="form__input-text"
+                      class="form__input-text form__input-text-phone"
                       type="text"
                       id="contacts-phone"
                       name="phone"
@@ -141,62 +149,74 @@
                     />
                   </li>
                 </ul>
+              </div>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset-comment">
-            <h2 class="form__title">Комментарий</h2>
+          <fieldset class="form__fieldset form__fieldset-comment form__fieldset-line">
+            <div class="container program__form-wrapper">
+            <h2 class="form__title form__title-comment form__title-line">Комментарий</h2>
             <p class="form__item">
               <textarea class="form__comment" name="comment-field" placeholder="Расскажите обо всех повадках кота">
               </textarea>
             </p>
+            </div>
           </fieldset>
-          <fieldset class="form__fieldset">
-            <h2 class="form__title">Дополнительно</h2>
+          <fieldset class="form__fieldset form__fieldset-checkbox form__fieldset-line">
+            <div class="container program__form-wrapper">
+            <h2 class="form__title form__title-add form__title-line">Дополнительно</h2>
               <ul class="form__list form__list-checkbox">
                 <li class="form__item form__item-checkbox">
                   <label class="form__label-checkbox">
                     <input
-                      class="form__input-checkbox"
+                      class="visually-hidden form__input-checkbox"
                       type="checkbox"
                       name="sweetener"
+                      checked
                     />
+                    <span class="form__checkbox-mark"></span>
                     <span class="form-checkbox-text">Сахарозаменитель</span>
                   </label>
                 </li>
                 <li class="form__item form__item-checkbox">
                   <label class="form__label-checkbox">
                     <input
-                      class="form__input-checkbox"
+                      class="visually-hidden form__input-checkbox"
                       type="checkbox"
                       name="water"
                     />
+                    <span class="form__checkbox-mark"></span>
                     <span class="form-checkbox-text">Питьевая вода</span>
                   </label>
                 </li>
                 <li class="form__item form__item-checkbox">
                   <label class="form__label-checkbox">
                     <input
-                      class="form__input-checkbox"
+                      class="visually-hidden form__input-checkbox"
                       type="checkbox"
                       name="milk"
                     />
+                    <span class="form__checkbox-mark"></span>
                     <span class="form-checkbox-text">Молоко</span>
                   </label>
                 </li>
                 <li class="form__item form__item-checkbox">
                   <label class="form__label-checkbox">
                     <input
-                      class="form__input-checkbox"
+                      class="visually-hidden form__input-checkbox"
                       type="checkbox"
                       name="vitamins"
                     />
+                    <span class="form__checkbox-mark"></span>
                     <span class="form-checkbox-text">Витамины</span>
                   </label>
                 </li>
               </ul>
+              </div>
             </fieldset>
-            <div class="form__wrapper-tablet">
-            <button class="button form__button">Отправить заявку</button>
-            <p class="form__add">* — Обязательные поля</p>
+            <div class="container program__form-wrapper">
+              <div class="form__wrapper-tablet">
+                <button class="button form__button">Отправить заявку</button>
+                <p class="form__add">* — Обязательные поля</p>
+              </div>
             </div>
           </form>
         </div>
@@ -204,7 +224,10 @@
       <section class="contacts contacts__form">
         <div class="container contacts__container">
           <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="contacts__address">
+            <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__city">Санкт-Петербург</p>
+          </div>
         </div>
         <div class="contacts__map">
           <iframe

@@ -1,15 +1,22 @@
 .header {
   background-color: #ffffff;
+  min-width: 65px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
 }
 
-.header__menu {
+.header__line {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
 }
 
 .header__wrapper-tablet {
@@ -18,9 +25,27 @@
   }
 }
 
+.header__logo{
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .header__toggle {
   background-color: transparent;
   border: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -28,6 +53,8 @@
 }
 
 .header__wrapper {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -36,5 +63,14 @@
 
   @media (min-width: $desktop-width) {
     padding: 54px 110px 32px 110px;
+  }
+}
+
+.header__wrapper-form,
+.header__wrapper-catalog {
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    border: none;
   }
 }

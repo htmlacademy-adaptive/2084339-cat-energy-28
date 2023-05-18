@@ -210,8 +210,8 @@
   justify-content: center;
 }
 
-.example__left-mob,
-.example__right-mob {
+.example__left,
+.example__right {
 
   @media (min-width: $tablet-width) {
     width: 280px;

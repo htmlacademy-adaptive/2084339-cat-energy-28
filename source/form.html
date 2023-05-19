@@ -6,13 +6,18 @@
     <title>Интернет-магазин Кэт энерджи</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="../img/favicon.png">
+    <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="header">
       <div class="header__wrapper header__wrapper-form container">
         <div class="header__line">
           <a class="header__logo">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img
               class="header__image"
               src="img/logo-group.svg"
@@ -20,6 +25,7 @@
               width="191"
               height="38"
             />
+            </picture>
           </a>
           <button class="header__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>

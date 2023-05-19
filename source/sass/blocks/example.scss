@@ -190,7 +190,7 @@
     width: 185px;
     text-align: right;
     margin: 0;
-    font-size:20px;
+    font-size: 20px;
     line-height: 20px;
   }
 
@@ -210,9 +210,8 @@
   justify-content: center;
 }
 
-.example__left-mob,
-.example__right-mob {
-
+.example__left,
+.example__right {
   @media (min-width: $tablet-width) {
     width: 280px;
     height: 512px;

@@ -6,20 +6,26 @@
     <title>Интернет-магазин Кэт энерджи</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="../img/favicon.png">
+    <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="header">
       <div class="header__wrapper container">
         <div class="header__line">
           <a class="header__logo">
-            <img
-              class="header__image"
-              src="img/logo-group.svg"
-              alt="Логотип «Cat Energy»"
-              width="191"
-              height="38"
-            />
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img
+                class="header__image"
+                src="img/logo-group.svg"
+                alt="Логотип «Cat Energy»"
+                width="191"
+                height="38"
+              />
+            </picture>
           </a>
           <button class="header__toggle header-main__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -51,7 +57,18 @@
         <div class="container program__container">
           <h2 class="program__name">Функциональное питание для котов</h2>
           <p class="program__intro">Занялся собой? Займись котом!</p>
-          <img class="program__image" src="img/index-can.png" width="280" height="270" alt="Кэт Энерджи PRO Курица">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.png 1x, img/index-can-tablet@2x.png 2x">
+          <img
+            class="program__image"
+            src="img/index-can-phone@1x.png"
+            srcset="img/index-can-phone@2x.png 2x"
+            width="280"
+            height="270"
+            alt="Кэт Энерджи PRO Курица"
+          >
+          </picture>
           <a class="program__button button" href="#">Подобрать программу</a>
         </div>
       </section>
@@ -145,20 +162,28 @@
           </div>
           <div class="example__image-wrapper">
           <div class="example__image">
+            <picture class="example__image-size">
+              <source media="(min-width: 768px)" srcset="img/cat-before-phone@2x.png 1x, img/cat-before-tablet@2x.png 2x">
             <img
-              class="example__left-mob"
-              src="img/cat-left.png"
+              class="example__left"
+              src="img/cat-before-phone@1x.png"
+              srcset="img/cat-before-phone@2x.png 2x"
               width="140"
               height="256"
               alt="Фото До"
             />
+            </picture>
+            <picture class="example__image-size">
+              <source media="(min-width: 768px)" srcset="img/cat-after-phone@2x.png 1x, img/cat-after-tablet@2x.png 2x">
             <img
-              class="example__right-mob"
-              src="img/cat-right.png"
+              class="example__right"
+              src="img/cat-after-phone@1x.png"
+              srcset="img/cat-after-phone@2x.png 2x"
               width="140"
               height="256"
               alt="Фото После"
             />
+            </picture>
           </div>
             <button class="example__slider">
               <svg class="example__arrows" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">

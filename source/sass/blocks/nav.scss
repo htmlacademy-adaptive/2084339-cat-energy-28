@@ -10,7 +10,7 @@
   position: relative;
 }
 
-.main-nav--opened::before{
+.main-nav--opened::before {
   content: "";
   position: absolute;
   top: -34px;
@@ -19,9 +19,13 @@
   height: 1.5px;
   background: #000000;
   transform: rotate(45deg);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
-.main-nav--opened::after{
+.main-nav--opened::after {
   content: "";
   position: absolute;
   top: -34px;
@@ -30,6 +34,10 @@
   height: 1.5px;
   background: #000000;
   transform: rotate(135deg);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav--closed {

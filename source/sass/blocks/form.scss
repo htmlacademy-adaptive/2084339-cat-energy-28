@@ -304,7 +304,7 @@
   left: 8px;
   width: 13px;
   height: 13px;
-  background-color: #68B738;
+  background-color: #68b738;
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
@@ -327,7 +327,7 @@ input::placeholder {
 }
 
 .form__input-error {
-  border: 2px solid #FF8282;
+  border: 2px solid #ff8282;
 }
 
 .form__radio-mark {
@@ -385,7 +385,6 @@ input::placeholder {
 }
 
 .form__add {
-  margin: 0;
   font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;

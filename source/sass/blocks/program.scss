@@ -1,5 +1,7 @@
 .program__index {
-  position: relative;
+  @media (max-width: $tablet-width) {
+    position: relative;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 82px;
@@ -29,7 +31,6 @@
   @media (min-width: $desktop-width) {
     background-image: url("../img/index-background-desktop@1x.jpg");
     display: inline-block;
-    top: -150px;
     width: 50%;
     height: 658px;
   }
@@ -135,6 +136,10 @@
   }
 }
 
+.program__image-wrapper {
+  margin: 0 auto;
+}
+
 .program__image {
   margin: 0 auto;
 
@@ -142,7 +147,8 @@
     content: "";
     position: absolute;
     top: 256px;
-    right: 3%;
+    left: 0;
+    right: 0;
     height: 536px;
     width: 630px;
     z-index: -1;

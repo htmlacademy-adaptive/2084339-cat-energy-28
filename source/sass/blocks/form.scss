@@ -219,7 +219,7 @@
 }
 
 .form__checkbox-mark:hover {
-  border: 1px solid #bababa;
+  outline: 1px solid #bababa;
 }
 
 .form__checkbox-mark:disabled {
@@ -250,12 +250,11 @@
 }
 
 .form__input-text:hover {
-  border: 1px solid #cdcdcd;
+  outline: 1px solid #cdcdcd;
 }
 
 .form__input-text:focus {
-  border: 2px solid #444444;
-  outline: none;
+  outline: 2px solid #444444;
 }
 
 .form__input-mail,
@@ -327,7 +326,7 @@ input::placeholder {
 }
 
 .form__input-error {
-  border: 2px solid #ff8282;
+  outline: 2px solid #ff8282;
 }
 
 .form__radio-mark {
@@ -348,7 +347,7 @@ input::placeholder {
 }
 
 .form__radio-mark:hover {
-  border: 1px solid #bababa;
+  outline: 1px solid #bababa;
 }
 
 .form__radio-mark:disabled {
@@ -360,6 +359,14 @@ input::placeholder {
   width: 100%;
   border: 1px solid #e7e7e7;
   padding: 0;
+}
+
+.form__comment:hover {
+  outline: 1px solid #cdcdcd;
+}
+
+.form__comment:focus {
+  outline: 2px solid #444444;
 }
 
 .form__list-checkbox {

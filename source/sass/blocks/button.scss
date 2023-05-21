@@ -1,0 +1,17 @@
+.button {
+  height: 40px;
+  width: 100%;
+  @include oswald-regular;
+  color: $text-on-color-bg;
+  background-color: $basic-green;
+  border: none;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 7px 44px;
+  white-space: nowrap;
+  outline: none;
+  cursor: pointer;
+}

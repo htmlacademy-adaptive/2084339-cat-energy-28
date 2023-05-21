@@ -1,0 +1,26 @@
+.about {
+ padding: 0 20px;
+}
+
+.about__list {
+ @include list-reset;
+}
+
+.about__item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.about__item-image {
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.about__description {
+  margin: 0;
+}
+
+.about__title {
+  @include title-large;
+  margin-bottom: 38px;
+}

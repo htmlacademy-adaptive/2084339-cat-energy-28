@@ -3,20 +3,22 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Cat Energy</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="body">
-  <header class="page-header">
-    <a class="page-header__logo-link">
-      <img class="page-header__logo-image" src="images/logo-mobile.svg" width="34" height="38"
-        alt="Логотип сайта Cat Energy">
-      <img class="page-header__logo-text-image" src="images/footer-logo.svg" width="100" height="18"
-        alt="Текстовый логотип сайта Cat Energy">
+  <header class="header">
+    <a class="header__logo-link logo">
+      <img class="logo__image" src="images/logo-mobile.svg" width="34" height="38" alt="Логотип сайта Cat Energy">
+      <svg class="logo__text-image" width="101" height="18">
+        <use xlink:href="images/sprite.svg#logo-text" />
+      </svg>
     </a>
-    <nav class="main-nav">
-      <button class="button">Меню сайта</button>
-      <ul class="site-list main-nav__list">
+    <nav class="header__nav">
+      <button class="header__menu-button">Меню сайта</button>
+      <ul class="site-list header__nav-list">
         <li class="site-list__item">
           <a class="site-list__link site-list__link--current">Главная</a>
         </li>
@@ -33,51 +35,82 @@
   <main class="page-main">
     <h1 class="visually-hidden">Главная страница сайта Cat Energy</h1>
     <section class="promo">
-      <h2 class="promo__title">Функциональное питание для котов</h2>
-      <p class="promo__description">Занялся собой? Займись котом!</p>
-      <img class="promo__image" src="images/index-can-mobile.png" alt="Промо-упаковка кошачьей еды с лого на крышке со вкусом курицы">
-      <button class="button" type="button">Подобрать программу</button>
+      <div class="promo__text-content">
+        <h2 class="promo__title">Функциональное питание для котов</h2>
+        <p class="promo__description">Занялся собой? Займись котом!</p>
+      </div>
+      <img class="promo__image" src="images/index-can-mobile.png"
+        alt="Промо-упаковка кошачьей еды с лого на крышке со вкусом курицы">
+      <div class="promo__button-wrapper">
+        <button class="button promo__button" type="button">Подобрать программу</button>
+      </div>
     </section>
-    <div class="promo">
-      <ul class="promo__list">
-        <li class="promo__item">
-          <article class="promo__card">
-            <img class="promo__image" src="images/cat-back-sitting.svg" width="200" height="210" alt="Стройная кошка">
-            <h3 class="promo__title">Похудение</h3>
-            <p class="promo__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
+    <div class="sub-promo">
+      <ul class="sub-promo__list">
+        <li class="sub-promo__item">
+          <article class="sub-promo__card">
+            <svg width="50" height="53">
+              <use xlink:href="images/sprite.svg#cat-sitting" />
+            </svg>
+            <h3 class="sub-promo__title-card">Похудение</h3>
+            <p class="sub-promo__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
               на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a href="catalog.html" class="promo__link">Каталог Slim</a>
+            <a class="sub-promo__link" href="catalog.html">
+              <span class="sub-promo__link-title">Каталог Slim</span>
+              <svg width="32" height="12">
+                <use xlink:href="images/sprite.svg#arrow" />
+              </svg>
+            </a>
           </article>
         </li>
-        <li class="promo__item">
-          <article class="promo__card">
-            <img class="promo__image" src="images/cat-back-moving.svg" width="268" height="200" alt="Мощный зверь">
-            <h3 class="promo__title">Набор массы</h3>
-            <p class="promo__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+        <li class="sub-promo__item">
+          <article class="sub-promo__card">
+            <svg width="67" height="50">
+              <use xlink:href="images/sprite.svg#cat-going" />
+            </svg>
+            <h3 class="sub-promo__title-card">Набор массы</h3>
+            <p class="sub-promo__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
               поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="sub-promo__link" href="catalog.html">
+              <span class="sub-promo__link-title">Каталог Pro</span>
+              <svg width="32" height="12">
+                <use xlink:href="images/sprite.svg#arrow" />
+              </svg>
+            </a>
           </article>
-          <a href="catalog.html" class="promo__link">Каталог Pro</a>
         </li>
       </ul>
     </div>
-    <section class="instruction">
-      <h2 class="instruction__title">
+    <section class="about">
+      <h2 class="about__title">
         Как это работает
       </h2>
-      <ol class="instruction__list">
-        <li class="instruction__item">
-          <p class="instruction__description">Функциональное питание содержит только полезные питательные вещества.
+      <ol class="about__list">
+        <li class="about__item">
+          <svg class="about__item-image" width="60" height="60">
+            <use xlink:href="images/sprite.svg#icon-leaf" />
+          </svg>
+          <p class="about__description">Функциональное питание содержит только полезные питательные вещества.
           </p>
         </li>
-        <li class="instruction__item">
-          <p class="instruction__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+        <li class="about__item">
+          <svg class="about__item-image" width="60" height="60">
+            <use xlink:href="images/sprite.svg#icon-water" />
+          </svg>
+          <p class="about__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
           </p>
         </li>
-        <li class="instruction__item">
-          <p class="instruction__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+        <li class="about__item">
+          <svg class="about__item-image" width="60" height="60">
+            <use xlink:href="images/sprite.svg#icon-fork" />
+          </svg>
+          <p class="about__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
         </li>
-        <li class="instruction__item">
-          <p class="instruction__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+        <li class="about__item">
+          <svg class="about__item-image" width="60" height="60">
+            <use xlink:href="images/sprite.svg#icon-clock" />
+          </svg>
+          <p class="about__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
           </p>
         </li>
       </ol>
@@ -120,7 +153,11 @@
           alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </div>
       <div class="logo-wrapper">
-        <img class="footer__logo-image" src="images/footer-logo.svg" width="128" height="24" alt="Лого Cat Energy">
+        <a class="footer__logo-link logo">
+          <svg class="logo__text-image" width="128" height="24">
+            <use xlink:href="images/sprite.svg#logo-text" />
+          </svg>
+        </a>
       </div>
     </section>
     <section class="socials">
@@ -157,14 +194,9 @@
       <div class="copyright__wrapper">
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
           <span class="copyright__link-text">HTML Academy</span>
-        </a>
-        <a class="copyright__logo-link" href="https://htmlacademy.ru/intensive/adaptive" rel="noopener noreferrer"
-          target="_blank">
           <svg width="27" height="34">
             <use xlink:href="images/sprite.svg#html-academy-logo" />
           </svg>
-          <span class="copyright__logo">
-          </span>
         </a>
       </div>
     </section>

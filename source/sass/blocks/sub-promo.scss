@@ -1,0 +1,45 @@
+.sub-promo {
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.sub-promo__list {
+  @include list-reset;
+}
+
+.sub-promo__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.sub-promo__card {
+  background-color: $basic-grey;
+  padding: 20px;
+}
+
+.sub-promo__title-card {
+  @include oswald-regular;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: $text-black;
+}
+
+.sub-promo__text {
+  font-size: 14px;
+  line-height: 18px;
+  color: $dark-grey;
+}
+
+.sub-promo__link {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: Oswald, sans-serif;
+  color: $text-black;
+  text-decoration: none;
+}
+
+.sub-promo__link-title {
+  margin-right: 15px;
+}

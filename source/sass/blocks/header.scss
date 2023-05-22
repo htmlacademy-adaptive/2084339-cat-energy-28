@@ -1,11 +1,50 @@
 .header {
+  position: relative;
   font-family: Oswald, sans-serif;
   font-weight: 500;
-  font-weight: 400;
   font-size: 20px;
   line-height: 20px;
   color: $text-black;
   text-transform: uppercase;
-  border-bottom: $separator-line;
+  border-bottom: $separator-line-1;
+  padding: 20px 22px 0 24px;
 }
 
+.header__nav {
+  text-align: center;
+}
+
+.header__logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__logo-image {
+  position: absolute;
+  left: 20px;
+  top: 12px;
+  display: flex;
+  align-items: center;
+  margin-right: 56px;
+}
+
+.header__logo-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 4px;
+  padding-bottom: 24px;
+}
+
+.header__menu-button {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  width: 18px;
+  height: 18px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}

@@ -19,10 +19,8 @@
 }
 
 .sub-promo__title-card {
-  @include oswald-regular;
-  font-size: 24px;
+  @include title-medium;
   text-transform: uppercase;
-  color: $text-black;
 }
 
 .sub-promo__text {

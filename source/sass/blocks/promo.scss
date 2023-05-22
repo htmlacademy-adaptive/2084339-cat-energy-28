@@ -1,5 +1,6 @@
 .promo {
   margin-bottom: 20px;
+  position: relative;
 }
 
 .promo__text-content {
@@ -7,9 +8,17 @@
   color: $text-on-color-bg;
   text-align: center;
   @include oswald-regular;
-  min-height: 302px;
-  padding: 27px 35px;
+  min-height: 300px;
+  padding: 27px 35px 145px;
   margin-bottom: 138px;
+}
+
+.promo__image {
+  position: absolute;
+  content: "";
+  bottom: 43px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .promo__title {

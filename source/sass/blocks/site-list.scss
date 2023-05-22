@@ -11,6 +11,14 @@
   }
 }
 
+.site-list__item {
+  @media (min-width: $tablet-width) {
+    max-width: 155px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .site-list__link {
   display: flex;
   text-transform: uppercase;

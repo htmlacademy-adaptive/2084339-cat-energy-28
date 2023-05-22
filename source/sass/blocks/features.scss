@@ -77,7 +77,6 @@
   margin: 0 0 29px 0;
   padding: 0 0 0 71px;
   display: flex;
-  white-space: nowrap;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -119,7 +118,7 @@
   text-decoration: none;
   align-items: center;
   color: #000000;
-  display: flex;
+  display: inline-block;
   margin: 0;
   padding: 0;
   position: relative;

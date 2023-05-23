@@ -18,6 +18,7 @@
 }
 
 .form__radio-text {
+  display: inline-block;
   margin: auto 0 auto 45px;
 
   @media (min-width: $tablet-width) {
@@ -85,13 +86,13 @@
 
 .form__item {
   display: flex;
-  gap: 13px;
+  gap: 10px;
   align-items: center;
   margin: 0;
 }
 
 .form__item:not(:last-child) {
-  margin: 0 0 14px 0;
+  margin: 0 0 25px 0;
 }
 
 .form__title {
@@ -166,11 +167,34 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
-  white-space: nowrap;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.form__label-text-age {
+  min-width: 94px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 117px;
+  }
+}
+
+.form__label-text-weight {
+  min-width: 60px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 75px;
+  }
+}
+
+.form__label-text-mail {
+  min-width: 50px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 63px;
   }
 }
 
@@ -179,6 +203,7 @@
 }
 
 .form-checkbox-text {
+  display: inline-block;
   margin: auto 0 auto 46px;
 
   @media (min-width: $tablet-width) {
@@ -205,7 +230,9 @@
 
 .form__checkbox-mark {
   display: block;
-  top: -4px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
   left: 0;
   position: absolute;
   width: 30px;
@@ -231,7 +258,7 @@
   position: relative;
 }
 
-.form__input-text {
+.form__input-text[type="text"] {
   padding: 14px 0 14px 20px;
   margin: 0;
   font-size: 16px;
@@ -249,6 +276,26 @@
   }
 }
 
+.form__input-text-mail {
+  background-image: url('../img/mail.svg');
+  background-repeat: no-repeat;
+  background-position: center right 13px;
+
+  @media (min-width: $tablet-width) {
+    background-position: center right 16px;
+  }
+}
+
+.form__input-text-phone {
+  background-image: url('../img/phone.svg');
+  background-repeat: no-repeat;
+  background-position: center right 13px;
+
+  @media (min-width: $tablet-width) {
+    background-position: center right 16px;
+  }
+}
+
 .form__input-text:hover {
   outline: 1px solid #cdcdcd;
 }
@@ -257,28 +304,10 @@
   outline: 2px solid #444444;
 }
 
-.form__input-mail,
-.form__input-phone {
+.form__input-mail[type="text"],
+.form__input-phone[type="text"] {
   position: relative;
-}
-
-.form__input-mail::before {
-  content: url("../img/mail.svg");
-  position: absolute;
-  top: 16px;
-  left: 94%;
-  width: 17px;
-  height: 13px;
-  z-index: 2;
-}
-
-.form__input-phone::before {
-  content: url("../img/phone.svg");
-  position: absolute;
-  top: 15px;
-  right: 16px;
-  width: 15px;
-  height: 15px;
+  background-color: transparent;
 }
 
 .form__input-radio,
@@ -314,7 +343,8 @@
   }
 }
 
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: #444444;
   font-size: 16px;
   line-height: 18px;
@@ -325,13 +355,20 @@ input::placeholder {
   }
 }
 
+textarea::placeholder {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
 .form__input-error {
   outline: 2px solid #ff8282;
 }
 
 .form__radio-mark {
   display: block;
-  top: -6px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
   left: 0;
   position: absolute;
   width: 30px;
@@ -358,7 +395,11 @@ input::placeholder {
   height: 150px;
   width: 100%;
   border: 1px solid #e7e7e7;
-  padding: 0;
+  padding: 9px 13px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 19px;
+  }
 }
 
 .form__comment:hover {
@@ -383,11 +424,23 @@ input::placeholder {
 }
 
 .form__item-checkbox {
-  height: 30px;
-
   @media (min-width: $tablet-width) {
     width: 230px;
-    height: 40px;
+    min-height: 40px;
+  }
+}
+
+.form__item-checkbox:not(:last-child) {
+  margin: 0 0 25px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.form__item-contacts:not(:last-child) {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -410,7 +463,6 @@ input::placeholder {
 .form__radio-item {
   display: flex;
   align-items: center;
-  height: 30px;
 
   @media (min-width: $tablet-width) {
     height: 40px;
@@ -418,7 +470,7 @@ input::placeholder {
 }
 
 .form__radio-item:not(:last-child) {
-  margin: 0 0 13px 0;
+  margin: 0 0 25px 0;
 }
 
 .form__button {

@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   flex-direction: column;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -13,7 +14,7 @@
 
 .site-list__item {
   @media (min-width: $tablet-width) {
-    max-width: 155px;
+    max-width: 170px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -27,7 +28,6 @@
   padding: 22px;
   margin: 0;
   justify-content: center;
-  white-space: nowrap;
   border-top: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {

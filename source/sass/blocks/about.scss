@@ -1,6 +1,10 @@
 .about {
   background-color: #ffffff;
   border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+  }
 }
 
 .about__title {
@@ -25,13 +29,13 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    gap: 137px;
+    gap: 37px 153px;
     margin-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
-    gap: auto;
+    gap: 94px;
     flex-wrap: nowrap;
   }
 }
@@ -39,7 +43,7 @@
 .about__item {
   margin: 0 0 24px 0;
   padding: 0 0 0 80px;
-  height: 60px;
+  min-height: 60px;
   display: flex;
   align-items: center;
   background-repeat: no-repeat;
@@ -84,6 +88,9 @@
     content: "";
     top: -40px;
     right: 0;
+    overflow: hidden;
+    max-width: 125px;
+    max-height: 280px;
   }
 }
 

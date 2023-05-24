@@ -124,7 +124,7 @@
   position: relative;
 }
 
-.features__link::before {
+/*.features__link::before {
   content: url("../img/icon-arrow.svg");
   position: absolute;
   left: 108px;
@@ -141,5 +141,38 @@
 .features__link:active::before {
   content: url("../img/icon-arrow-big.svg");
   width: 32px;
+  opacity: 0.3;
+}*/
+
+.features__name {
+  display: inline-block;
+  position: relative;
+  margin-right: 57px;
+}
+
+.features__name::before {
+  content: url("../img/icon-arrow.svg");
+  position: absolute;
+  right: -60px;
+  top: -1px;
+  width: 24px;
+  height: 12px;
+  margin: 0 20px;
+}
+
+.features__link:hover .features__name::before {
+  content: url("../img/icon-arrow-big.svg");
+  width: 32px;
+  text-align: left;
+  right: -68px;
+}
+
+.features__link:active .features__name::before {
+  content: url("../img/icon-arrow-big.svg");
+  width: 32px;
+  opacity: 0.3;
+}
+
+.features__link:active {
   opacity: 0.3;
 }

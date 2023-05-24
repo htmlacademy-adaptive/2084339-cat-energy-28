@@ -7,7 +7,7 @@
   color: $text-black;
   text-transform: uppercase;
   border-bottom: $separator-line-1;
-  padding: 20px 22px 0 24px;
+  padding-top: 20px;
 }
 
 .header__nav {
@@ -34,6 +34,7 @@
   justify-content: center;
   padding-top: 4px;
   padding-bottom: 24px;
+  border-bottom: $separator-line-1;
 }
 
 .header__menu-button {

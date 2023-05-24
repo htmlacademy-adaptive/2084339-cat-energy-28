@@ -11,10 +11,12 @@
 <body class="body">
   <header class="header">
     <a class="header__logo-link logo"></a>
-    <img class="header__logo-image" src="images/logo-mobile.svg" width="34" height="38" alt="Логотип сайта Cat Energy">
+    <svg class="header__logo-image" width="34" height="38">
+      <use xlink:href="images/sprite.svg#icon-logo-cat" />
+    </svg>
     </a>
     <div class="header__logo-wrapper">
-      <svg class="logo__text-image" width="101" height="18">
+      <svg class="header__logo-text" width="101" height="18">
         <use xlink:href="images/sprite.svg#logo-text" />
       </svg>
     </div>
@@ -26,7 +28,7 @@
         </svg>
       </button>
       <ul class="site-list header__nav-list">
-        <li class="site-list__item">
+        <li class="site-list__item site-list__link--current">
           <a class="site-list__link site-list__link--current">Главная</a>
         </li>
         <li class="site-list__item">
@@ -56,26 +58,34 @@
       <ul class="sub-promo__list">
         <li class="sub-promo__item">
           <article class="sub-promo__card">
-            <svg width="50" height="53">
-              <use xlink:href="images/sprite.svg#cat-sitting" />
-            </svg>
-            <h3 class="sub-promo__title-card">Похудение</h3>
-            <p class="sub-promo__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
+            <div class="sub-promo__card-wrapper">
+              <svg class="sub-promo__card-image" width="50" height="53">
+                <use xlink:href="images/sprite.svg#cat-sitting" />
+              </svg>
+              <h3 class="sub-promo__title-card">Похудение</h3>
+            </div>
+            <p class="sub-promo__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+              Пора
               на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+
             <a class="sub-promo__link" href="catalog.html">
               <span class="sub-promo__link-title">Каталог Slim</span>
               <svg width="32" height="12">
                 <use xlink:href="images/sprite.svg#arrow" />
               </svg>
             </a>
+
           </article>
+
         </li>
         <li class="sub-promo__item">
           <article class="sub-promo__card">
-            <svg width="67" height="50">
-              <use xlink:href="images/sprite.svg#cat-going" />
-            </svg>
-            <h3 class="sub-promo__title-card">Набор массы</h3>
+            <div class="sub-promo__card-wrapper">
+              <svg class="sub-promo__card-image" width="67" height="50">
+                <use xlink:href="images/sprite.svg#cat-going" />
+              </svg>
+              <h3 class="sub-promo__title-card">Набор массы</h3>
+            </div>
             <p class="sub-promo__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
               поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="sub-promo__link" href="catalog.html">
@@ -161,15 +171,15 @@
         <p class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
       </div>
       <div class="contacts__map">
-        <iframe
+        <!-- <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sge!4v1684756566447!5m2!1sru!2sge"
           width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          referrerpolicy="no-referrer-when-downgrade"></iframe> -->
       </div>
     </section>
     <div class="footer__content">
-      <div class="footer__logo-wrapper logo">
-        <a class="footer__logo-link logo">
+      <div class="footer__logo-wrapper">
+        <a class="footer__logo-link">
           <svg class="footer__logo-image" width="128" height="24">
             <use xlink:href="images/sprite.svg#logo-text" />
           </svg>
@@ -206,13 +216,12 @@
       </section>
       <section class="copyright">
         <h2 class="visually-hidden">Сайт разработчика</h2>
-        <div class="copyright__wrapper">
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-            <span class="copyright__link-text">HTML Academy</span></a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+          <span class="copyright__link-text">HTML Academy</span>
           <svg class="copypight__link-image" width="27" height="34">
             <use xlink:href="images/sprite.svg#html-academy-logo" />
           </svg>
-        </div>
+        </a>
       </section>
     </div>
   </footer>

@@ -10,8 +10,16 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  padding: 7px 44px;
+  padding: 11px 40px;
   white-space: nowrap;
   outline: none;
   cursor: pointer;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+
+  &--secondary {
+    background-color: $basic-grey;
+    color: $dark-grey;
+  }
 }

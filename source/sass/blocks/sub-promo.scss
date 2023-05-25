@@ -26,16 +26,13 @@
 .sub-promo__title-card {
   display: flex;
   margin: 0;
+  @include title-medium;
+  text-transform: uppercase;
 }
 
 .sub-promo__card {
   background-color: $basic-grey;
   padding: 20px;
-}
-
-.sub-promo__title-card {
-  @include title-medium;
-  text-transform: uppercase;
 }
 
 .sub-promo__text {

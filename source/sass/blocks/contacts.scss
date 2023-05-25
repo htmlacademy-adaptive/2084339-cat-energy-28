@@ -3,6 +3,11 @@
   justify-content: space-between;
   padding: 28px 19px;
   margin: 0;
+
+  &--with-background {
+    background-color: $basic-grey;
+
+  }
 }
 
 .contacts__welcome-text {
@@ -23,5 +28,7 @@
 .contacts__map {
   width: 100%;
   height: 362px;
-  background-color: $basic-grey;
+  background-image: url("../../images/Rectangle.jpg");
+  background-color: #aadaff;
+  background-repeat: no-repeat;
 }

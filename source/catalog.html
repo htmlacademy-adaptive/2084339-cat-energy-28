@@ -54,7 +54,7 @@
                   alt="Продукт каталога Cat Energy PRO со вкусом курицы 500г">
               </div>
               <div class="card__text-content-wrapper">
-                <h3 class="card__title">Cat Energy PRO 500 г</h3>
+                <h3 class="card__title card__title--main-product">Cat Energy PRO 500 г</h3>
                 <ul class="card__list">
                   <li class="card__item">
                     <span class="card__item-name">Масса</span>
@@ -82,7 +82,7 @@
                   alt="Продукт каталога Cat Energy PRO со вкусом курицы 1000г">
               </div>
               <div class="card__text-content-wrapper">
-                <h3 class="card__title">Cat Energy PRO 1000 г</h3>
+                <h3 class="card__title card__title--main-product">Cat Energy PRO 1000 г</h3>
                 <ul class="card__list">
                   <li class="card__item">
                     <span class="card__item-name">Масса</span>
@@ -110,7 +110,7 @@
                   alt="Продукт каталога Cat Energy PRO со вкусом рыбы 500г">
               </div>
               <div class="card__text-content-wrapper">
-                <h3 class="card__title">Cat Energy PRO 500 г</h3>
+                <h3 class="card__title card__title--main-product">Cat Energy PRO 500 г</h3>
                 <ul class="card__list">
                   <li class="card__item">
                     <span class="card__item-name">Масса</span>
@@ -138,7 +138,7 @@
                   alt="Продукт каталога Cat Energy PRO со вкусом рыбы 1000г">
               </div>
               <div class="card__text-content-wrapper">
-                <h3 class="card__title">Cat Energy PRO 1000 г</h3>
+                <h3 class="card__title card__title--main-product">Cat Energy PRO 1000 г</h3>
                 <ul class="card__list">
                   <li class="card__item">
                     <span class="card__item-name">Масса</span>
@@ -166,7 +166,7 @@
                   alt="Продукт каталога Cat Energy Slim со вкусом гречки 500г">
               </div>
               <div class="card__text-content-wrapper">
-                <h3 class="card__title">Cat Energy Slim 500 г</h3>
+                <h3 class="card__title card__title--main-product">Cat Energy Slim 500 г</h3>
                 <ul class="card__list">
                   <li class="card__item">
                     <span class="card__item-name">Масса</span>
@@ -194,7 +194,7 @@
                   alt="Продукт каталога Cat Energy Slim со вкусом гречки 1000г">
               </div>
               <div class="card__text-content-wrapper">
-                <h3 class="card__title">Cat Energy Slim 1000 г</h3>
+                <h3 class="card__title card__title--main-product">Cat Energy Slim 1000 г</h3>
                 <ul class="card__list">
                   <li class="card__item">
                     <span class="card__item-name">Масса</span>
@@ -222,7 +222,7 @@
                   alt="Продукт каталога Cat Energy Slim со вкусом риса 500г">
               </div>
               <div class="card__text-content-wrapper">
-                <h3 class="card__title">Cat Energy Slim 500 г</h3>
+                <h3 class="card__title card__title--main-product">Cat Energy Slim 500 г</h3>
                 <ul class="card__list">
                   <li class="card__item">
                     <span class="card__item-name">Масса</span>
@@ -244,13 +244,17 @@
         </li>
         <li class="catalog__item">
           <article class="card">
-            <span class="card__item-name"></span>
-            <h3 class="card__title">Показать еще 100500 товаров</h3>
-            <ul class="card__list">
-              <li class="card__item">
-                <span class="card__item">На самом деле вкусов гораздо больше!</span>
-              </li>
-            </ul>
+            <div class="card__content-wrapper">
+              <div class="card__text-content-wrapper card__text-content-wrapper--show-more">
+                <span class="card__icon"></span>
+                <h3 class="card__title">Показать еще 100500 товаров</h3>
+                <ul class="card__list">
+                  <li class="card__item">
+                    <span class="card__item">На самом деле вкусов гораздо больше!</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <button type="submit" class="button button--secondary">Показать все</button>
           </article>
         </li>
@@ -277,51 +281,66 @@
         </li>
         <li class="catalog__item">
           <article class="card">
-            <h3 class="card__title">Питьевая вода</h3>
-            <ul class=card__list>
-              <li class="card__item">
-                <span class="card__item-name">5 литров</span>
-                <span class="card__item-value">50 Р.</span>
-              </li>
-            </ul>
+            <div class="card__content-wrapper">
+              <div class="card__text-content-wrapper">
+                <h3 class="card__title">Питьевая вода</h3>
+                <ul class=card__list>
+                  <li class="card__item">
+                    <span class="card__item-name">5 литров</span>
+                    <span class="card__item-value">50 Р.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <button type="submit" class="button">Заказать</button>
           </article>
         </li>
         <li class="catalog__item">
           <article class="card">
-            <h3 class="card__title">Молоко</h3>
-            <ul class=card__list>
-              <li class="card__item">
-                <span class="card__item-name">1 литр</span>
-                <span class="card__item-value">100 Р.</span>
-              </li>
-            </ul>
+            <div class="card__content-wrapper">
+              <div class="card__text-content-wrapper">
+                <h3 class="card__title">Молоко</h3>
+                <ul class=card__list>
+                  <li class="card__item">
+                    <span class="card__item-name">1 литр</span>
+                    <span class="card__item-value">100 Р.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <button type="submit" class="button">Заказать</button>
           </article>
         </li>
         <li class="catalog__item">
           <article class="card">
-            <h3 class="card__title">Витамины</h3>
-            <ul class="card__list">
-              <li class="card__item">
-                <span class="card__item-name">1 упаковка (30 г)</span>
-                <span class="card__item-value">300 Р.</span>
-              </li>
-            </ul>
+            <div class="card__content-wrapper">
+              <div class="card__text-content-wrapper">
+                <h3 class="card__title">Витамины</h3>
+                <ul class="card__list">
+                  <li class="card__item">
+                    <span class="card__item-name">1 упаковка (30 г)</span>
+                    <span class="card__item-value">300 Р.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <button type="submit" class="button">Заказать</button>
           </article>
         </li>
       </ul>
       <div class="advertisement">
-        <img class="advertisement__image" src="images/gift-photo-mobile.png" width="280" height="289"
-          alt="Бонус-кот в корзине">
-        <p class="advertisement__description">Закажите все и получите чехол для кота в подарок!</p>
+        <div class="advertisement__wrapper">
+          <svg class="advertisement__image" width="78" height="80">
+            <use xlink:href="images/sprite.svg#gift" />
+          </svg>
+          <p class="advertisement__description">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
       </div>
     </section>
   </main>
   <footer class="footer">
     <section class="contacts">
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper contacts__wrapper--with-background">
         <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts__welcome-text">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
         <p class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>

@@ -24,6 +24,11 @@
   flex-direction: column;
   flex-grow: 1;
   flex-basis: 50%;
+
+  &--show-more {
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .card__icon {
@@ -33,7 +38,7 @@
   align-items: center;
   width: 30px;
   height: 30px;
-  padding: 0;
+  margin-bottom: 23px;
 
   &::before {
     position: absolute;
@@ -61,11 +66,16 @@
   text-transform: uppercase;
   line-height: 20px;
   margin-bottom: 14px;
+
+  &--main-product {
+    max-width: 55%;
+  }
 }
 
 .card__title-more {
   @include title-medium;
   margin-bottom: 0;
+  line-height: 24px;
 }
 
 .card__list {

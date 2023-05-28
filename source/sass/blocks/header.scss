@@ -16,13 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0 0 0;
-  margin: 0 0 13px 0;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    margin: 0;
-  }
+  padding: 10px 0;
 }
 
 .header__wrapper-tablet {
@@ -53,22 +47,22 @@
   }
 }
 
-// .header__toggle {
-//   background-color: transparent;
-//   border: none;
+.header__toggle {
+  background-color: transparent;
+  border: none;
 
-//   &:hover {
-//     opacity: 0.8;
-//   }
+  &:hover {
+    opacity: 0.8;
+  }
 
-//   &:active {
-//     opacity: 0.6;
-//   }
+  &:active {
+    opacity: 0.6;
+  }
 
-//   @media (min-width: $tablet-width) {
-//     display: none;
-//   }
-// }
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
 
 .header__wrapper {
   position: relative;

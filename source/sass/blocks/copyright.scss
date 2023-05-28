@@ -5,6 +5,16 @@
   text-decoration: none;
   margin: 0;
   padding: 0;
+  color: #666666;
+}
+
+.copyright__link:hover {
+  color: #68b738;
+}
+
+.copyright__link:active {
+  color: #68b738;
+  opacity: 0.3;
 }
 
 .copyright__text {
@@ -20,20 +30,4 @@
   @media (min-width: $tablet-width) {
     margin-right: 28px;
   }
-}
-
-.copyright__logo {
-  color: #666666;
-}
-
-.copyright__link:hover .copyright__logo {
-  color: #68b738;
-}
-
-.copyright__link:active {
-  opacity: 0.3;
-}
-
-.copyright__link:active .copyright__logo {
-  color: #68b738;
 }

@@ -7,18 +7,25 @@
   margin: 0 0 40px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 6px 0 0 17px;
+    gap: 27px;
   }
 }
 
-.social__link {
+.social__vk,
+.social__yt,
+.social__tg {
   color: #666666;
 }
 
-.social__link:hover {
+.social__vk:hover,
+.social__yt:hover,
+.social__tg:hover {
   color: #68b738;
 }
 
-.social__link:active {
+.social__vk:active,
+.social__yt:active,
+.social__tg:active {
   color: rgba(104, 183, 56, 0.3);
 }

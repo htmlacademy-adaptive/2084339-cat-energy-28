@@ -499,6 +499,10 @@ textarea::placeholder {
   @media (min-width: $tablet-width) {
     gap: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .form__item-contacts:not(:last-child) {
@@ -548,7 +552,6 @@ textarea::placeholder {
 
 .form__button {
   @media (min-width: $tablet-width) {
-    width: auto;
     padding: 16px 45px;
     font-size: 20px;
     width: 282px;
@@ -597,8 +600,3 @@ textarea::placeholder {
   }
 }
 
-.form__item-contacts {
-  @media (min-width: $desktop-width) {
-    width: 100%;
-  }
-}

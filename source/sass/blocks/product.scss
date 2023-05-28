@@ -22,7 +22,7 @@
 
 .product__title-add {
   left: -21px;
-  margin: 0 0 36px 0;
+  margin: 0 0 29px 0;
   position: relative;
   padding: 0 21px;
   display: inline-block;
@@ -32,7 +32,8 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0 37px;
-    left: -37px;
+    left: 0;
+    margin: 0 0 80px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,6 +48,10 @@
   margin: 0;
   padding: 0;
   border-top: 1px solid #cdcdcd;
+
+  @media (min-width: $desktop-width) {
+    width: 896px;
+  }
 }
 
 .product__item {
@@ -58,17 +63,19 @@
   @media (min-width: $tablet-width) {
     border: 1px solid #cdcdcd;
     border-top: none;
-    padding: 27px 38px;
-    grid-template-columns: auto 160px 90px;
+    padding: 28px 38px;
+    grid-template-columns: auto 127px 62px;
+    column-gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 325px 243px 82px auto;
+    grid-template-columns: 290px 207px 45px auto;
     align-items: center;
     padding: 15px 0;
     margin: 0;
     border: none;
     border-bottom: 1px solid #cdcdcd;
+    column-gap: 35px;
   }
 }
 
@@ -77,8 +84,9 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
-  margin: 0 0 13px 0;
+  margin: 0 0 11px 0;
   grid-column: 1 / -1;
+  color: #222222;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -91,7 +99,7 @@
 .product__price,
 .product__count {
   font-family: "Lato", "Arial", sans-serif;
-  margin: 0 0 15px 0;
+  margin: 0 0 10px 0;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -103,10 +111,43 @@
   }
 }
 
+.product__price {
+  text-align: end;
+
+  @media (min-width: $tablet-width) {
+    min-width: 126px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
 .product__container {
   @media (min-width: $desktop-width) {
     max-width: 1440px;
-    padding: 0 110px 86px 110px;
+    padding: 0 110px 90px 110px;
+  }
+}
+
+.product__unit {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / -1;
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 4;
   }
 }
 
@@ -118,20 +159,20 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 244px;
     grid-column: 4 / -1;
     margin: 0;
   }
 }
 
-.product__gift--wrapper {
+.product-gift {
   background-image: url("../img/case-cat@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  height: 290px;
+  background-color: #68b738;
   display: flex;
   margin: 35px 0;
   position: relative;
+  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/case-cat@2x.jpg");
@@ -140,15 +181,11 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/case-cat-tablet@1x.jpg");
     height: 200px;
-    margin: 69px 0 76px 0;
+    margin: 67px 0 76px 0;
   }
 
   @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
     background-image: url("../img/case-cat-tablet@2x.jpg");
-  }
-
-  @media (max-width: $desktop-width) {
-    background-size: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -163,37 +200,44 @@
   }
 }
 
-.product__gift--wrapper::before {
+.product-gift::before {
   content: url("../img/gift.svg");
   position: absolute;
   top: 59px;
-  left: 40%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   width: 78px;
   height: 80px;
 
   @media (min-width: $tablet-width) {
-    top: 57px;
+    top: 0;
+    bottom: 0;
     left: 77px;
+    margin: auto 0;
   }
 
   @media (min-width: $desktop-width) {
     top: 55px;
-    left: 84px;
+    left: 85px;
+    margin: 0;
   }
 }
 
-.product__gift--text {
+.product-gift__text {
   width: 161px;
   text-align: center;
   color: #ffffff;
   display: flex;
   margin: 187px auto 43px auto;
   font-family: "Lato", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
 
   @media (min-width: $tablet-width) {
     background-size: 100%;
     text-align: left;
-    margin: 70px 124px 70px auto;
+    margin: auto 124px auto auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -205,7 +249,7 @@
 .product__wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 895px 1fr;
+    grid-template-columns: 895px auto;
     gap: 80px;
   }
 }

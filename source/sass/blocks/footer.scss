@@ -4,7 +4,7 @@
 
 .footer__container {
   margin: 0;
-  padding: 40px 20px;
+  padding: 38px 20px;
   display: flex;
   flex-direction: column;
 
@@ -17,6 +17,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 66px 110px;
+    margin: 0 auto;
   }
 }
 
@@ -33,9 +34,15 @@
 
 .footer__logo-image {
   color: #111111;
+
+  @media (min-width: $tablet-width) {
+    width: 143px;
+    height: 27px;
+  }
 }
 
-.footer__logo-image:hover {
+.footer__logo-image:hover,
+.footer__logo-image:focus {
   color: #3e3e3e;
 }
 

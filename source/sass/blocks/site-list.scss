@@ -9,12 +9,13 @@
     display: flex;
     flex-direction: row;
     vertical-align: middle;
+    gap: 37px;
   }
 }
 
 .site-list__item {
   @media (min-width: $tablet-width) {
-    max-width: 170px;
+    max-width: 188px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -24,16 +25,25 @@
   display: flex;
   text-transform: uppercase;
   text-decoration: none;
+  font-size: 18px;
+  line-height: 24px;
   color: #000000;
   padding: 22px;
   margin: 0;
   justify-content: center;
   border-top: 1px solid #e6e6e6;
+  font-weight: 500;
 
   @media (min-width: $tablet-width) {
-    margin: 0 17px;
     padding: 0;
     border: none;
+    font-weight: 400;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    color: #111111;
   }
 }
 
@@ -62,11 +72,17 @@
     position: absolute;
     width: 100%;
     height: 2px;
-    bottom: -8px;
+    bottom: -10px;
     left: 0;
     background: $green;
   }
 
+  @media (min-width: $desktop-width) {
+    bottom: -7px;
+  }
+}
+
+.site-list__link-index-current::before {
   @media (min-width: $desktop-width) {
     background: #ffffff;
   }

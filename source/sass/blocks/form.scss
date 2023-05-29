@@ -28,7 +28,7 @@
 
 .form__fieldset {
   border: none;
-  padding: 23px 20px;
+  padding: 24px 20px 20px 20px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
@@ -49,10 +49,13 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
     padding: 0;
+    margin-left: auto;
   }
 }
 
 .form__fieldset-radio {
+  padding: 24px 20px;
+
   @media (min-width: $tablet-width) {
     margin: 0 70px 75px 70px;
     border: 1px solid #e7e7e7;
@@ -62,43 +65,52 @@
   @media (min-width: $desktop-width) {
     padding: 0;
     margin: 0;
+    margin-right: auto;
   }
 }
 
 .form__fieldset-comment {
   margin: 0;
   border: none;
-  padding-bottom: 0;
+  padding: 24px 20px 0 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 93px;
+    padding: 0 70px 0 70px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 95px;
+    margin: 0 auto 95px auto;
+    padding: 0 110px 0 110px;
   }
 }
 
 .form__fieldset-contacts {
   border: none;
-  padding-top: 28px;
-  padding-bottom: 0;
+  padding: 27px 20px 0 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 63px;
-    padding-top: 0;
+    padding: 0 70px 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 0 110px;
   }
 }
 
 .form__fieldset-checkbox {
   border: none;
+  padding: 25px 20px 29px 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 42px;
+    margin-bottom: 18px;
+    padding: 0 70px 26px 70px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 49px;
+    margin-bottom: 53px;
+    padding: 0 110px 0 110px;
   }
 }
 
@@ -142,12 +154,20 @@
 }
 
 .form__title-contacts {
+  margin: 0 0 29px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 72px 0;
+  }
+
   @media (min-width: $desktop-width) {
     margin: 0 0 71px 0;
   }
 }
 
 .form__title-comment {
+  margin: 0 0 35px 0;
+
   @media (min-width: $tablet-width) {
     margin: 0 0 72px 0;
   }
@@ -307,7 +327,7 @@
 }
 
 .form__input-text[type="text"] {
-  padding: 14px 0 14px 20px;
+  padding: 14px 0 14px 18px;
   margin: 0;
   font-size: 16px;
   line-height: 18px;
@@ -332,7 +352,7 @@
 .form__input-text-mail {
   background-image: url("../img/mail.svg");
   background-repeat: no-repeat;
-  background-position: center right 13px;
+  background-position: center right 20px;
 
   @media (min-width: $tablet-width) {
     background-position: center right 16px;
@@ -355,6 +375,10 @@
 
 .form__input-text:focus {
   outline: 2px solid #444444;
+}
+
+.form__input-mail {
+  gap: 4px;
 }
 
 .form__input-mail[type="text"],
@@ -449,7 +473,7 @@ textarea::placeholder {
   height: 150px;
   width: 100%;
   border: 1px solid #e7e7e7;
-  padding: 9px 13px;
+  padding: 11px 13px;
 
   @media (min-width: $tablet-width) {
     padding: 13px 19px;
@@ -465,7 +489,7 @@ textarea::placeholder {
 }
 
 .form__list-checkbox {
-  margin-bottom: 11px;
+  margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -488,7 +512,7 @@ textarea::placeholder {
 }
 
 .form__item-checkbox:not(:last-child) {
-  margin: 0 0 19px 0;
+  margin: 0 0 18px 0;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -530,6 +554,7 @@ textarea::placeholder {
   @media (min-width: $tablet-width) {
     margin: 0;
     font-size: 16px;
+    text-align: left;
   }
 }
 
@@ -552,7 +577,6 @@ textarea::placeholder {
 
 .form__button {
   @media (min-width: $tablet-width) {
-    width: auto;
     padding: 16px 45px;
     font-size: 20px;
     width: 282px;
@@ -567,7 +591,8 @@ textarea::placeholder {
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 282px 1fr;
     gap: 64px;
     align-items: center;
     margin-bottom: 79px;
@@ -576,7 +601,10 @@ textarea::placeholder {
 
   @media (min-width: $desktop-width) {
     gap: 83px;
+    grid-template-columns: 568px 1fr;
     padding: 0 110px;
+    margin: 0 auto 79px auto;
+    width: 1440px;
   }
 }
 
@@ -590,7 +618,7 @@ textarea::placeholder {
 
 .form__fieldset-wrapper {
   @media (min-width: $desktop-width) {
-    margin-bottom: 60px;
+    margin: 0 0 60px 0;
     padding: 0 110px;
   }
 }

@@ -1,0 +1,38 @@
+$radio-width: 30px;
+$radio-height: 30px;
+$radio-bullet-height: 14px;
+$radio-bullet-width: 14px;
+
+.radio {
+  position: relative;
+  padding-left: 46px;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  &::before {
+    content: "";
+    width: $radio-width;
+    height: $radio-height;
+    top: calc(($input-label-height - $radio-height) / 2);
+    left: 0;
+    border: $separator-line-3;
+  }
+
+  &::after {
+    width: $radio-bullet-width;
+    height: $radio-bullet-height;
+    top: calc((($input-label-height - $radio-height) / 2) + ($radio-height / 2));
+    left: calc($radio-width / 2);
+    transform: translate(-50%, -50%);
+    background-color: $basic-green;
+  }
+}
+
+.input-radio:checked+.radio::after {
+  content: "";
+}

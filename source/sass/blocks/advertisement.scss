@@ -1,6 +1,5 @@
 .advertisement {
   display: flex;
-
 }
 
 .advertisement__wrapper {
@@ -12,11 +11,20 @@
   background-size: cover;
   background-image: url("../../images/cat-gift.jpg");
   width: 100%;
-  height: 290px;
+  min-height: 290px;
   background-color: #6db043;
   margin: 0;
   padding: 66px 60px 43px;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+}
+
+.advertisement__description {
+  display: flex;
+  margin: 0;
+}
+
+.advertisement__image {
+  margin-bottom: 48px;
 }

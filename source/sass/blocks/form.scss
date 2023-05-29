@@ -1,0 +1,85 @@
+.form__fieldset {
+  display: flex;
+  border: none;
+  padding: 25px 20px 24px;
+  border-bottom: $separator-line-3;
+
+  &--weight {
+    color: $special-dark-grey;
+  }
+
+  &--additional {
+    color: $text-black;
+  }
+}
+
+.form__legend {
+  @include title-medium;
+  line-height: 26px;
+}
+
+.form__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  @include list-reset;
+  @include oswald-regular;
+  text-transform: uppercase;
+}
+
+.form__item {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.form__legend-contacts {
+  @include title-medium;
+  line-height: 26px;
+  padding: 0;
+}
+
+.form__label {
+  display: flex;
+  width: 100%;
+  @include oswald-regular;
+  font-size: 16px;
+  line-height: $input-label-height;
+  text-transform: uppercase;
+}
+
+.form__label-text {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  flex-basis: 20%;
+  align-items: center;
+  margin-right: 0;
+
+  &--main-user-info,
+  &--contacts {
+    margin-right: 12px;
+  }
+
+}
+
+
+
+
+
+.form__input {
+  display: flex;
+  width: 100%;
+  min-height: 45px;
+  outline: none;
+  border: none;
+  border: $border-line-grey;
+  padding: 14px 15px;
+  @include oswald-regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: $dark-grey;
+  text-transform: uppercase;
+}

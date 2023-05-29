@@ -21,7 +21,7 @@
         <use xlink:href="images/sprite.svg#logo-text" />
       </svg>
     </div>
-    <nav class="header__nav">
+    <!-- <nav class="header__nav">
       <button class="header__menu-button">
         <span class="visually-hidden">Закрыть</span>
         <svg width="18" height="18">
@@ -39,37 +39,41 @@
           <a class="site-list__link site-list__link--current">Подбор программы</a>
         </li>
       </ul>
-    </nav>
+    </nav> -->
   </header>
   <main>
     <section class="application">
       <h1 class="application__title">Подбор программы</h1>
       <p class="application__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="form" action="https://echo.htmlacademy.ru/courses" method="get">
-        <fieldset class="form__fieldset">
-          <legend class="visually-hidden">Основные вводные:</legend>
-          <ul class="form__list">
-            <li class="form__item">
-              <label class="form__label">
-                <span class="form__label-text">Имя:*</span>
-                <input class="form__input" type="text" name="cat-name" placeholder="Введите имя кота" value="Барсик"
-                  required>
-              </label>
-            </li>
-            <li class="form__item">
-              <label class="form__label">
-                <span class="form__label-text">Вес (кг):*</span>
-                <input class="form__input" type="text" name="weight" placeholder="Введите вес кота" value="7" required>
-              </label>
-            </li>
-            <li class="form__item">
-              <label class="form__label">
-                <span class="form__label-text">Возраст (лет):*</span>
-                <input class="form__input" type="text" name="age" placeholder="Введите возраст кота" value="7" required>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="form__fieldset-wrapper">
+          <fieldset class="form__fieldset">
+            <legend class="visually-hidden">Основные вводные:</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label">
+                  <span class="form__label-text form__label-text--main-user-info">Имя:*</span>
+                  <input class="form__input" type="text" name="cat-name" placeholder="Введите имя кота" value="Барсик"
+                    required>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__label">
+                  <span class="form__label-text form__label-text--main-user-info">Вес (кг):*</span>
+                  <input class="form__input" type="text" name="weight" placeholder="Введите вес кота" value="7"
+                    required>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__label">
+                  <span class="form__label-text">Возраст (лет):*</span>
+                  <input class="form__input" type="text" name="age" placeholder="Введите возраст кота" value="7"
+                    required>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="form__fieldset form__fieldset--weight">
           <legend class="visually-hidden">Вес</legend>
           <ul class="form__list">
@@ -98,15 +102,23 @@
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label">
-                <span class="form__label-text">E-mail:*</span>
-                <input class="form__input" type="email" name="user-email" placeholder="kuklachev@gmail.com" required>
+                <span class="form__label-text form__label-text--contacts">E-mail:*</span>
+                <input class="form__input" type="email" name="user-email" placeholder="Введите e-mail"
+                  value="kuklachev@gmail.com" required>
+                <svg class="form__icon" width="20" height="15">
+                    <use xlink:href="images/sprite.svg#icon-email" />
+                  </svg>
               </label>
             </li>
             <li class="form__item">
               <label class="form__label">
                 <span class="form__label-text">Телефон:*</span>
-                <input class="form__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" maxlength="20"
-                  pattern="8[0-9]" required>
+                <input class="form__input" type="tel" name="phone" placeholder="Введите телефон"
+                  value="8 (960) 900-60-90" maxlength="20"
+                  pattern="^8\s?[(]?[0-9]{3}[)]\s?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{2}[-\s\.]?[0-9]{2}$" required>
+                  <svg class="form__icon" width="20" height="20">
+                    <use xlink:href="images/sprite.svg#icon-phone" />
+                  </svg></span>
               </label>
             </li>
           </ul>

@@ -9,6 +9,9 @@
   }
 
   &--additional {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     color: $text-black;
   }
 }
@@ -16,6 +19,7 @@
 .form__legend {
   @include title-medium;
   line-height: 26px;
+  padding: 0;
 }
 
 .form__list {
@@ -35,12 +39,6 @@
   }
 }
 
-.form__legend-contacts {
-  @include title-medium;
-  line-height: 26px;
-  padding: 0;
-}
-
 .form__label {
   display: flex;
   width: 100%;
@@ -48,9 +46,11 @@
   font-size: 16px;
   line-height: $input-label-height;
   text-transform: uppercase;
+
 }
 
 .form__label-text {
+  position: relative;
   display: flex;
   flex-wrap: nowrap;
   white-space: nowrap;
@@ -62,19 +62,30 @@
   &--contacts {
     margin-right: 12px;
   }
-
+  &.checkbox {
+    margin-left: 18px;
+  }
 }
 
-
-
-
+.form__textarea {
+  width: 100%;
+  min-height: 150px;
+  resize: vertical;
+  @include oswald-regular;
+  color: $dark-grey;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  outline: none;
+  border: $border-line-light-grey;
+  padding: 10px 15px;
+}
 
 .form__input {
   display: flex;
   width: 100%;
   min-height: 45px;
   outline: none;
-  border: none;
   border: $border-line-grey;
   padding: 14px 15px;
   @include oswald-regular;
@@ -82,4 +93,20 @@
   line-height: 18px;
   color: $dark-grey;
   text-transform: uppercase;
+}
+
+.form__icon {
+  position: absolute;
+  content: "";
+  right: 36px;
+  top: 10px;
+  transform: translateY(50%);
+  display: flex;
+  align-items: center;
+}
+
+.form__required-fields {
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }

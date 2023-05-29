@@ -55,7 +55,7 @@
 }
 
 .product__item {
-  padding: 13px 0 19px 0;
+  padding: 13px 0 18px 0;
   border-bottom: 1px solid #cdcdcd;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -63,7 +63,7 @@
   @media (min-width: $tablet-width) {
     border: 1px solid #cdcdcd;
     border-top: none;
-    padding: 28px 38px;
+    padding: 26px 39px 28px 39px;
     grid-template-columns: auto 127px 62px;
     column-gap: 30px;
   }
@@ -71,7 +71,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 290px 207px 45px auto;
     align-items: center;
-    padding: 15px 0;
+    padding: 17px 0 14px 0;
     margin: 0;
     border: none;
     border-bottom: 1px solid #cdcdcd;
@@ -84,7 +84,7 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
-  margin: 0 0 11px 0;
+  margin: 0 0 14px 0;
   grid-column: 1 / -1;
   color: #222222;
 
@@ -99,7 +99,7 @@
 .product__price,
 .product__count {
   font-family: "Lato", "Arial", sans-serif;
-  margin: 0 0 10px 0;
+  margin: 0 0 14px 0;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -126,7 +126,7 @@
 .product__container {
   @media (min-width: $desktop-width) {
     max-width: 1440px;
-    padding: 0 110px 90px 110px;
+    padding: 0 110px 86px 110px;
   }
 }
 
@@ -141,7 +141,7 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 2 / -1;
-    margin: 0;
+    margin: 2px 0 0 0;
     font-size: 16px;
     line-height: 20px;
   }

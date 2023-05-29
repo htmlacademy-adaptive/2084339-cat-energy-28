@@ -30,6 +30,10 @@
   height: 16px;
   background-color: transparent;
   border: none;
+  
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .nav--opened .nav__toggle::before {
@@ -86,10 +90,15 @@
 .nav--nojs .nav__list {
   position: static;
   min-height: 0;
+  display: flex;
 }
 
 @media (max-width: $tablet-width) {
   .nav--closed .nav__list {
     display: none;
   }
+
+  .nav--nojs .nav__list {
+    display: flex;
+  } 
 }

@@ -4,11 +4,19 @@
   justify-content: center;
   gap: 24px;
   padding: 0;
-  margin: 0 0 40px 0;
+  margin: 0 0 36px 0;
 
   @media (min-width: $tablet-width) {
     margin: 6px 0 0 17px;
     gap: 27px;
+  }
+}
+
+.social__list-form {
+  margin: 0 0 41px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 15px 0;
   }
 }
 

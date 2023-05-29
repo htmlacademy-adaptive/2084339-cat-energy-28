@@ -8,9 +8,15 @@
   }
 }
 
-.program__form-section {
+.program-form {
   @media (min-width: $desktop-width) {
     margin-bottom: 84px;
+  }
+}
+
+.program__form-intro {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
   }
 }
 
@@ -92,16 +98,14 @@
 }
 
 .program__title-form {
-  padding: 0 20px;
-
   @media (min-width: $tablet-width) {
     margin: 60px 0 54px 0;
-    padding: 0 70px;
+    padding: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 38px 0 54px 0;
-    padding: 0 110px;
+    margin: 38px auto 54px auto;
+    padding: 0;
   }
 }
 
@@ -150,7 +154,7 @@
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
-    max-width: 391px;
+    max-width: 403px;
     margin: 0 0 66px 0;
     font-size: 20px;
     line-height: 30px;
@@ -162,17 +166,16 @@
 }
 
 .program__slogan-form {
-  padding: 0 20px;
   margin: 0 0 10px 0;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 61px 0;
-    padding: 0 0 0 70px;
+    padding: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 0 62px 0;
-    padding: 0 0 0 110px;
+    padding: 0;
   }
 }
 

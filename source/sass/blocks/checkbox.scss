@@ -1,13 +1,25 @@
-.checkbox::before {
-  content: "";
-  display: block;
-  width: 30px;
-  height: 30px;
-  border: $separator-line-3;
-  background-color: transparent;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  margin-right: 16px;
+$checkbox-width: 30px;
+$checkbox-height: 30px;
+
+.checkbox {
+  position: relative;
+  padding-left: 46px;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: $checkbox-width;
+    height: $checkbox-height;
+    top: calc(($input-label-height - $checkbox-height) / 2);
+    left: 0;
+    border: $separator-line-3;
+    background-color: transparent;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-right: 16px;
+  }
 }
 
 .input-checkbox:checked+.checkbox::before {

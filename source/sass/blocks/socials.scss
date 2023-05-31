@@ -1,5 +1,4 @@
 .socials {
-  gap: 37px;
   border-bottom: $separator-line-2;
   padding: 22px 30px;
 }
@@ -7,9 +6,10 @@
 .socials__list {
   display: flex;
   @include list-reset;
-  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+}
 
+.socials__item:not(:last-child) {
+  margin-right: 40px;
 }

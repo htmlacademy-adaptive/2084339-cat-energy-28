@@ -1,18 +1,27 @@
 .form__fieldset {
   display: flex;
-  border: none;
   padding: 25px 20px 24px;
-  border-bottom: $separator-line-3;
+  border: none;
+
+  &:not(:last-child) {
+    border-bottom: $separator-line-3;
+  }
 
   &--weight {
     color: $special-dark-grey;
   }
 
   &--additional {
-    display: flex;
     flex-direction: column;
-    gap: 20px;
     color: $text-black;
+  }
+
+  &--additional .form__list {
+    margin-bottom: 34px;
+  }
+
+  &--additional .button {
+    margin-bottom: 21px;
   }
 }
 
@@ -29,6 +38,7 @@
   @include list-reset;
   @include oswald-regular;
   text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 .form__item {
@@ -40,6 +50,7 @@
 }
 
 .form__label {
+  position: relative;
   display: flex;
   width: 100%;
   @include oswald-regular;
@@ -50,20 +61,14 @@
 }
 
 .form__label-text {
-  position: relative;
   display: flex;
-  flex-wrap: nowrap;
-  white-space: nowrap;
-  flex-basis: 20%;
   align-items: center;
   margin-right: 0;
 
   &--main-user-info,
   &--contacts {
     margin-right: 12px;
-  }
-  &.checkbox {
-    margin-left: 18px;
+    flex-shrink: 0;
   }
 }
 
@@ -82,7 +87,7 @@
 }
 
 .form__input {
-  display: flex;
+  display: inline-block;
   width: 100%;
   min-height: 45px;
   outline: none;
@@ -98,10 +103,9 @@
 .form__icon {
   position: absolute;
   content: "";
-  right: 36px;
-  transform: translateY(50%);
-  display: flex;
-  align-items: center;
+  top: 50%;
+  right: 13px;
+  transform: translateY(-9px);
 }
 
 .form__required-fields {

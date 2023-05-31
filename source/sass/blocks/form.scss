@@ -15,14 +15,6 @@
     flex-direction: column;
     color: $text-black;
   }
-
-  &--additional .form__list {
-    margin-bottom: 34px;
-  }
-
-  &--additional .button {
-    margin-bottom: 21px;
-  }
 }
 
 .form__legend {
@@ -39,6 +31,10 @@
   @include oswald-regular;
   text-transform: uppercase;
   margin-bottom: 0;
+
+  &--additional {
+    margin-bottom: 34px;
+  }
 }
 
 .form__item {
@@ -86,10 +82,12 @@
   padding: 10px 15px;
 }
 
+$input-icon-gap: 45px;
+
 .form__input {
   display: inline-block;
   width: 100%;
-  min-height: 45px;
+  height: 45px;
   outline: none;
   border: $border-line-grey;
   padding: 14px 15px;
@@ -98,27 +96,29 @@
   line-height: 18px;
   color: $dark-grey;
   text-transform: uppercase;
-  padding-right: 40px;
+
+  &--with-icon {
+    padding-right: $input-icon-gap;
+  }
 }
 
-.form__icon-wrapper .form__icon-email {
+.form__icon-wrapper {
   position: absolute;
-  content: "";
-  top: 50%;
-  right: 16px;
-  transform: translateY(-50%);
-}
-
-.form__icon-wrapper .form__icon-phone {
-  position: absolute;
-  content: "";
-  top: 50%;
-  right: 13px;
-  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $input-icon-gap;
+  height: 100%;
+  top: 0;
+  right: 0;
 }
 
 .form__required-fields {
   display: flex;
   justify-content: center;
   margin: 0;
+}
+
+.form__submit-button {
+  margin-bottom: 21px;
 }

@@ -15,10 +15,6 @@ $checkbox-height: 30px;
     top: calc(($input-label-height - $checkbox-height) / 2);
     left: 0;
     border: $separator-line-3;
-    background-color: transparent;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    margin-right: 16px;
   }
 }
 

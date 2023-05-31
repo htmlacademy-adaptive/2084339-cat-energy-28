@@ -98,14 +98,23 @@
   line-height: 18px;
   color: $dark-grey;
   text-transform: uppercase;
+  padding-right: 40px;
 }
 
-.form__icon {
+.form__icon-wrapper .form__icon-email {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+}
+
+.form__icon-wrapper .form__icon-phone {
   position: absolute;
   content: "";
   top: 50%;
   right: 13px;
-  transform: translateY(-9px);
+  transform: translateY(-50%);
 }
 
 .form__required-fields {

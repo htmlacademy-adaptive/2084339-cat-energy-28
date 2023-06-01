@@ -1,0 +1,24 @@
+.application {
+padding-top: 27px;
+}
+
+.application__title {
+  @include title-large;
+  line-height: 1;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 37px;
+}
+
+.application__description {
+  display: flex;
+  @include oswald-regular;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $text-black;
+  padding: 0 20px;
+  margin-top: 0;
+  margin-bottom: 14px;
+  width: 100%;
+}

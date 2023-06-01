@@ -1,0 +1,25 @@
+.button {
+  height: 40px;
+  width: 100%;
+  @include oswald-regular;
+  color: $color-white;
+  background-color: $basic-green;
+  border: none;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 11px 40px;
+  white-space: nowrap;
+  outline: none;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+
+  &--secondary {
+    background-color: $basic-grey;
+    color: $dark-grey;
+  }
+}

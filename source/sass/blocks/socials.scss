@@ -1,0 +1,15 @@
+.socials {
+  border-bottom: $separator-line-2;
+  padding: 22px 30px;
+}
+
+.socials__list {
+  display: flex;
+  @include list-reset;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 40px;
+}

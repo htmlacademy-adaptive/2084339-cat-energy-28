@@ -1,0 +1,20 @@
+@mixin title-large {
+  @include oswald-regular;
+  font-size: 36px;
+  color: $text-black;
+  margin-top: 0;
+}
+
+@mixin title-medium {
+  @include oswald-regular;
+  font-size: 24px;
+  color: $text-black;
+  margin-top: 0;
+}
+
+@mixin title-small {
+  @include oswald-regular;
+  font-size: 16px;
+  color: $text-black;
+  margin-top: 0;
+}

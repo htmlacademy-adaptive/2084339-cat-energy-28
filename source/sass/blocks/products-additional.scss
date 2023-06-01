@@ -1,0 +1,13 @@
+.products-additional {
+  padding: 25px 20px;
+
+  & .card {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  & .card__item {
+    font-size: 14px;
+    line-height: 1;
+  }
+}

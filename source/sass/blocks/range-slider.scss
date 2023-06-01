@@ -1,0 +1,21 @@
+.range-slider {
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.range-slider__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  color: $text-black;
+  min-width: 70px;
+  height: 30px;
+}
+
+.range-slider__custom {
+  width: 100%;
+}
+

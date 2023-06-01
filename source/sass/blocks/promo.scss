@@ -1,0 +1,43 @@
+.promo {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.promo__text-content {
+  background-color: $basic-green;
+  color: $color-white;
+  text-align: center;
+  @include oswald-regular;
+  min-height: 300px;
+  padding: 27px 35px 145px;
+  margin-bottom: 138px;
+}
+
+.promo__image {
+  position: absolute;
+  content: "";
+  bottom: 43px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.promo__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.promo__description {
+  font-size: 14;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.promo__button-wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+

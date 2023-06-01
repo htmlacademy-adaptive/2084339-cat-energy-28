@@ -1,0 +1,61 @@
+.sub-promo {
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.sub-promo__list {
+  @include list-reset;
+}
+
+.sub-promo__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.sub-promo__card-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.sub-promo__card-image {
+  margin-right: 20px;
+}
+
+.sub-promo__title-card {
+  display: flex;
+  margin: 0;
+  @include title-medium;
+  text-transform: uppercase;
+}
+
+.sub-promo__card {
+  background-color: $basic-grey;
+  padding: 20px;
+}
+
+.sub-promo__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $dark-grey;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 22px;
+  border-bottom: $separator-line-2;
+}
+
+.sub-promo__link {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: Oswald, sans-serif;
+  color: $text-black;
+  text-decoration: none;
+  padding-top: 19px;
+}
+
+.sub-promo__link-title {
+  margin-right: 15px;
+}

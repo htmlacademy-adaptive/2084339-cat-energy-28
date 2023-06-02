@@ -59,3 +59,51 @@
 .sub-promo__link-title {
   margin-right: 15px;
 }
+
+@media #{$tablet-width} {
+  .sub-promo__card {
+    position: relative;
+    padding-right: 316px;
+    min-height: 372px;
+  }
+
+  .sub-promo__card-image {
+    position: absolute;
+    margin-right: 0;
+
+    &--slim {
+      right: 62px;
+      top: 81px;
+      width: 200px;
+      height: 211px;
+    }
+
+    &--pro {
+      right: 28px;
+      top: 91px;
+      width: 268px;
+      height: 200px;
+    }
+  }
+}
+
+@media #{$desktop-width} {
+  .sub-promo__list {
+    display: flex;
+  }
+
+  .sub-promo__card-image {
+    position: static;
+
+    &--slim {
+      width: 100px;
+      height: 106px;
+    }
+
+    &--pro {
+      width: 134px;
+      height: 100px;
+    }
+  }
+
+}

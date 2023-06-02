@@ -1,6 +1,6 @@
 .form__fieldset {
   display: flex;
-  padding: 25px 20px 24px;
+  padding: 0 20px 24px;
   border: none;
 
   &:not(:last-child) {
@@ -9,18 +9,24 @@
 
   &--weight {
     color: $special-dark-grey;
+    padding-top: 28px;
   }
 
   &--additional {
     flex-direction: column;
     color: $text-black;
   }
+
+  &--user-info {
+    padding-top: 39px;
+  }
 }
 
 .form__legend {
   @include title-medium;
   line-height: 26px;
-  padding: 0;
+  padding-top: 24px;
+  margin-bottom: 35px;
 }
 
 .form__list {

@@ -13,3 +13,11 @@
 .socials__item:not(:last-child) {
   margin-right: 40px;
 }
+
+@media #{$tablet-width} {
+  .socials {
+    border-bottom: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

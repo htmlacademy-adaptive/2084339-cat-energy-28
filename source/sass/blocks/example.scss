@@ -81,3 +81,31 @@
   width: 100%;
   height: 100%;
 }
+
+.example__cat-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+@media #{$tablet-width} {
+  .example {
+    background-color: $color-white;
+  }
+
+  .example__achievement {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+@media #{$desktop-width} {
+  .example__main-content {
+    display: flex;
+  }
+  .example__achievement {
+    flex-direction: column;
+    align-items: center;
+  }
+}

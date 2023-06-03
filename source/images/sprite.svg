@@ -96,7 +96,7 @@
       </clipPath>
     </defs>
   </symbol>
-  <symbol id="icon-leaf" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+  <symbol id="icon-leaf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none">
     <rect width="60" height="60" fill="#68B738" />
     <g clip-path="url(#clip0_95_18)">
       <path
@@ -109,7 +109,7 @@
       </clipPath>
     </defs>
   </symbol>
-  <symbol id="icon-water" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+  <symbol id="icon-water" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none">
     <rect width="60" height="60" fill="#68B738" />
     <g clip-path="url(#clip0_95_25)">
       <path

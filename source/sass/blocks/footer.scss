@@ -10,4 +10,15 @@
   padding-bottom: 30px;
 }
 
+@media #{$tablet-width} {
+  .footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer__logo-wrapper {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
 

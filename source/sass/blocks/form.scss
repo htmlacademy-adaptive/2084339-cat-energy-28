@@ -128,3 +128,50 @@ $input-icon-gap: 45px;
 .form__submit-button {
   margin-bottom: 21px;
 }
+
+@media #{$desktop-width} {
+  .form__fieldset {
+    &:not(:last-child) {
+      border-bottom: unset;
+    }
+
+    &--user-info {
+      flex-grow: 1;
+    }
+
+    &--weight {
+      flex-grow: 1;
+    }
+  }
+
+  .form__fieldset-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.form__label-text {
+  align-items: unset;
+}
+
+.form__list {
+  &--contacts {
+    flex-direction: row;
+  }
+
+  &--additional {
+    flex-direction: row;
+  }
+
+}
+
+.form__button-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__submit-button {
+  flex-basis: 50%;
+  margin-right: 80px;
+}

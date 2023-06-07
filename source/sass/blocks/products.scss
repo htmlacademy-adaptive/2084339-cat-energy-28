@@ -1,0 +1,12 @@
+@media #{$tablet-width} {
+  .products {
+    padding: 0 30px 68px;
+  }
+}
+
+@media #{$desktop-width} {
+  .products-additional__content-wrapper {
+display: flex;
+  }
+
+}

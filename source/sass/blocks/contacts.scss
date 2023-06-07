@@ -32,3 +32,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media #{$desktop-width} {
+  .contacts__wrapper {
+      position: absolute;
+      background-color: $color-white;
+  }
+}

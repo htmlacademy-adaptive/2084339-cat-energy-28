@@ -7,3 +7,9 @@
   align-items: center;
   padding-top: 22px;
 }
+
+@media #{$tablet-width } {
+  .copyright__link {
+    padding-top: 0;
+  }
+}

@@ -11,3 +11,12 @@
   border-bottom: $separator-line-1;
 }
 
+@media #{$tablet-width} {
+  .site-list {
+    display: flex;
+  }
+
+  .site-list__link {
+    border-bottom: none;
+  }
+}

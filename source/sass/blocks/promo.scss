@@ -15,7 +15,6 @@
 
 .promo__image {
   position: absolute;
-  content: "";
   bottom: 43px;
   left: 50%;
   transform: translateX(-50%);
@@ -41,3 +40,13 @@
   margin-right: 20px;
 }
 
+@media #{$desktop-width} {
+  .promo__image {
+    transform: none;
+    left: auto;
+    right: 0;
+    top: 0;
+    bottom: auto;
+  }
+
+}

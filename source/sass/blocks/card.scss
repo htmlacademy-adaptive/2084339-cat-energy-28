@@ -1,6 +1,7 @@
 .card {
   display: flex;
   flex-direction: column;
+  border-bottom: none;
   padding: 20px 20px 25px;
 }
 
@@ -68,7 +69,7 @@
   margin-bottom: 14px;
 
   &--main-product {
-    max-width: 55%;
+    max-width: 70%;
   }
 }
 
@@ -88,4 +89,78 @@
   color: $dark-grey;
   font-size: 12px;
   line-height: 16px;
+}
+
+@media #{$tablet-width} {
+  .card {
+    position: relative;
+    width: 100%;
+    padding: 0px 37px 39px;
+
+    &--main-products {
+      background-color: $basic-grey;
+      padding-top: 73px;
+    }
+
+    &--products-additional{
+      padding: 0;
+    }
+  }
+
+  .card__content-wrapper {
+    flex-direction: column;
+
+    &--additional {
+      flex-direction: row;
+    }
+  }
+
+  .card__title {
+    &--main-product {
+      @include title-medium;
+      line-height: 24px;
+      max-width: 60%;
+      align-items: center;
+      margin-right: 0;
+    }
+  }
+
+  .card__title-wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .card__content-wrapper {
+    flex-direction: column;
+    align-items: initial;
+  }
+
+  .card__text-content-wrapper {
+    &--additional {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  .card__item {
+    font-size: 16px;
+    padding-bottom: 9px;
+
+    &:not(:first-child) {
+      padding-top: 7px;
+    }
+
+    .card__image {
+      position: absolute;
+      top: -10%;
+    }
+  }
+}
+
+@media #{$desktop-width} {
+.card {
+&--products-additional {
+  flex-direction: row;
+}
+}
 }

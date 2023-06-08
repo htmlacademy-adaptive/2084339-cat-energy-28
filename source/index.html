@@ -59,7 +59,7 @@
         <li class="sub-promo__item">
           <article class="sub-promo__card">
             <div class="sub-promo__card-wrapper">
-              <svg class="sub-promo__card-image" width="50" height="53">
+              <svg class="sub-promo__card-image sub-promo__card-image--slim" width="50" height="53">
                 <use xlink:href="images/sprite.svg#cat-sitting" />
               </svg>
               <h3 class="sub-promo__title-card">Похудение</h3>
@@ -81,7 +81,7 @@
         <li class="sub-promo__item">
           <article class="sub-promo__card">
             <div class="sub-promo__card-wrapper">
-              <svg class="sub-promo__card-image" width="67" height="50">
+              <svg class="sub-promo__card-image sub-promo__card-image--pro" width="67" height="50">
                 <use xlink:href="images/sprite.svg#cat-going" />
               </svg>
               <h3 class="sub-promo__title-card">Набор массы</h3>
@@ -134,32 +134,39 @@
     </section>
     <section class="example">
       <h2 class="example__title">Живой пример</h2>
-      <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-        Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
-        16 часов в день.</p>
-      <div class="example__achievement">
-        <ul class="example__achievement-list">
-          <li class="example__achievement-item">
-            <span class="example__achievement-feature">5 кг</span>
-            <span class="example__achievement-value">Снижение веса</span>
-          </li>
-          <li class="example__achievement-item">
-            <span class="example__achievement-feature">60 дней</span>
-            <span class="example__achievement-value">Затрачено времени</span>
-          </li>
-        </ul>
-        <div class="example__summary">
-          <span class="example__summary-result">Затраты на питание:</span>
-          <span class="example__summary-cost">15 000 руб.</span>
+      <div class="example__main-content">
+        <div class="example__text-block">
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+            Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
+            по
+            16 часов в день.</p>
+          <div class="example__achievement">
+            <ul class="example__achievement-list">
+              <li class="example__achievement-item">
+                <span class="example__achievement-feature">5 кг</span>
+                <span class="example__achievement-value">Снижение веса</span>
+              </li>
+              <li class="example__achievement-item">
+                <span class="example__achievement-feature">60 дней</span>
+                <span class="example__achievement-value">Затрачено времени</span>
+              </li>
+            </ul>
+            <div class="example__summary">
+              <span class="example__summary-result">Затраты на питание:</span>
+              <span class="example__summary-cost">15 000 руб.</span>
+            </div>
+          </div>
         </div>
-        <div class="example__image-wrapper">
-          <img class="example__image" src="images/cat-fat.png" width="311" height="240" alt="Пример толстого кота">
+        <div class="example__cat-slider">
+          <div class="example__image-wrapper">
+            <img class="example__image" src="images/cat-fat.png" width="311" height="240" alt="Пример толстого кота">
+          </div>
+          <label class="range-slider">
+            <span class="range-slider__name">Было</span>
+            <input class="range-slider__custom" type="range" min="0" max="100" value="50" name="range" step="10">
+            <span class="range-slider__name">Стало</span>
+          </label>
         </div>
-        <label class="range-slider">
-          <span class="range-slider__name">Было</span>
-          <input class="range-slider__custom" type="range" min="0" max="100" value="50" name="range" step="10">
-          <span class="range-slider__name">Стало</span>
-        </label>
       </div>
     </section>
   </main>

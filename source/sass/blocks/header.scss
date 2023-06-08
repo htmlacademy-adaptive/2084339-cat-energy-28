@@ -17,15 +17,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.header__logo-image {
   position: absolute;
   left: 20px;
   top: 12px;
-  display: flex;
-  align-items: center;
   margin-right: 56px;
+}
+
+.header__logo-image {
+  display: flex;
 }
 
 .header__logo-wrapper {
@@ -47,4 +46,23 @@
   background-color: transparent;
   outline: none;
   cursor: pointer;
+}
+
+@media #{$tablet-width} {
+  .header {
+    display: flex;
+  }
+
+  .header__logo-wrapper {
+    border-bottom: none;
+  }
+
+  .header__menu-button,
+  .header__logo-wrapper {
+    display: none;
+  }
+
+  .header__logo-link {
+    position: static;
+  }
 }

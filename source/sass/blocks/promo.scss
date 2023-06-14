@@ -4,23 +4,48 @@
 }
 
 .promo__text-content {
-  background-color: $basic-green;
+  position: relative;
+  z-index: 2;
   color: $color-white;
   text-align: center;
   @include oswald-regular;
   min-height: 300px;
   padding: 27px 35px 145px;
   margin-bottom: 138px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &::before {
+    background-image: url("../../images/promo-cat-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    background-color: $basic-green;
+    opacity: 0.85;
+  }
 }
 
 .promo__image {
   position: absolute;
+  z-index: 2;
   bottom: 43px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .promo__title {
+  position: relative;
+  z-index: 1;
   font-weight: 400;
   font-size: 36px;
   line-height: 1;
@@ -29,6 +54,8 @@
 }
 
 .promo__description {
+  position: relative;
+  z-index: 1;
   font-size: 14;
   line-height: 1;
   margin: 0;
@@ -40,13 +67,96 @@
   margin-right: 20px;
 }
 
-@media #{$desktop-width} {
+@media #{$tablet-width} {
+  .promo {
+    padding-bottom: 526px;
+    margin-bottom: 0px;
+  }
+
+  .promo__text-content {
+    color: $text-black;
+    max-width: 90%;
+    padding: 27px 117px 0px;
+    text-align: left;
+    margin-bottom: 50px;
+    min-height: unset;
+
+    &::before,
+    &::after {
+      content: none;
+    }
+  }
+
+  .promo__title {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+
+  .promo__description {
+    font-size: 20px;
+  }
+
+  .promo__button {
+    height: 54px;
+    max-width: 40%;
+    font-size: 20px;
+    line-height: 1;
+    padding: 14px 26px;
+  }
+
+  .promo__button-wrapper {
+    padding-left: 90px;
+  }
+
   .promo__image {
+    z-index: -1;
+    bottom: 0;
+  }
+}
+
+@media #{$desktop-width} {
+  .promo {
+    padding-bottom: 267px;
+  }
+
+  .promo__title {
+    max-width: 40%;
+  }
+
+  .promo__image {
+    z-index: 2;
     transform: none;
     left: auto;
-    right: 0;
+    right: 330px;
     top: 0;
     bottom: auto;
   }
 
+  .promo__text-content {
+    max-width: unset;
+    padding-top: 58px;
+
+    &::after {
+      content: "";
+      top: -$header-height-desktop;
+      left: 50%;
+      width: 50vw;
+      height: 694px;
+    }
+
+    &::before {
+      content: "";
+      width: 50vw;
+      height: 694px;
+      top: -$header-height-desktop;
+      left: 50%;
+      background-image: url("../../images/promo-cat-desktop.jpg");
+      background-size: 1044px 694px;
+      background-color: #414146;
+    }
+  }
+
+  .promo__button {
+    max-width: 19%;
+  }
 }

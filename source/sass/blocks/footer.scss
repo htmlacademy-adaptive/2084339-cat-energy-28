@@ -25,6 +25,7 @@
 
 @media #{$desktop-width} {
   .footer {
+    @include container;
     position: relative;
   }
 }

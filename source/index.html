@@ -12,9 +12,11 @@
   <header class="header">
     <div class="header__content">
       <a class="header__logo-link">
-        <svg class="header__logo-image" width="34" height="38">
-          <use xlink:href="images/sprite.svg#icon-logo-cat" />
-        </svg>
+        <picture>
+          <source srcset="images/logo-desktop.svg" media="(min-width:1440px)">
+          <source srcset="images/logo-tablet.svg" media="(min-width:768px)">
+          <img class="header__logo-image" src="images/logo-mobile.svg" alt="Логотип сайта Cat Energy">
+        </picture>
       </a>
       <div class="header__logo-wrapper">
         <svg class="header__logo-text" width="101" height="18">
@@ -92,7 +94,8 @@
               </svg>
               <h3 class="sub-promo__title-card">Набор массы</h3>
             </div>
-            <p class="sub-promo__text sub-promo__text--weight">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+            <p class="sub-promo__text sub-promo__text--weight">Заработать авторитет среди дворовых котов и даже собак?
+              Серия Cat Energy Pro
               поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="sub-promo__link" href="catalog.html">
               <span class="sub-promo__link-title">Каталог Pro</span>

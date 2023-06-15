@@ -22,7 +22,7 @@
 .header__nav-list {
   background-color: $color-white;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   transition: all 0.4s ease-in-out;
 
   &--open {
@@ -77,6 +77,7 @@
 @media #{$tablet-width} {
   .header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 25px 30px;
     font-size: 18px;

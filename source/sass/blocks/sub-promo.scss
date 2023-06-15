@@ -61,6 +61,11 @@
 }
 
 @media #{$tablet-width} {
+  .sub-promo {
+    margin-bottom: 45px;
+    padding: 0 30px;
+  }
+
   .sub-promo__item {
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -84,7 +89,6 @@
   }
 
   .sub-promo__text {
-    width: 340px;
     font-size: 16px;
     line-height: 24px;
     color: $text-black;

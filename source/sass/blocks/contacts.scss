@@ -33,9 +33,35 @@
   background-size: cover;
 }
 
+@media #{$tablet-width} {
+  .contacts__wrapper {
+    padding: 60px 72px 58px 70px;
+  }
+
+  .contacts__welcome-text {
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  .contacts__address {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
 @media #{$desktop-width} {
   .contacts__wrapper {
-      position: absolute;
-      background-color: $color-white;
+    position: absolute;
+    padding: 60px 90px 50px 76px;
+    align-items: center;
+    background-color: $color-white;
+    width: 40%;
+    height: 200px;
+    left: 7%;
+    top: 17%;
+  }
+
+  .contacts__map {
+    height: 400px;
   }
 }

@@ -10,16 +10,20 @@
 
 <body class="body">
   <header class="header">
-    <a class="header__logo-link" href="index.html">
-      <span class="visually-hidden">Главная страница</span>
-      <svg class="header__logo-image" width="34" height="38">
-        <use xlink:href="images/sprite.svg#icon-logo-cat" />
-      </svg>
-    </a>
-    <div class="header__logo-wrapper">
-      <svg class="header__logo-text" width="101" height="18">
-        <use xlink:href="images/sprite.svg#logo-text" />
-      </svg>
+    <div class="header__content">
+      <a class="header__logo-link" href="index.html">
+        <span class="visually-hidden">Главная страница</span>
+        <picture>
+          <source srcset="images/logo-mobile.svg" media="(min-width:1440px)">
+          <source srcset="images/logo-tablet.svg" media="(min-width:768px)">
+          <img class="header__logo-image" src="images/logo-mobile.svg" alt="Логотип сайта Cat Energy">
+        </picture>
+      </a>
+      <div class="header__logo-wrapper">
+        <svg class="header__logo-text" width="101" height="18">
+          <use xlink:href="images/sprite.svg#logo-text" />
+        </svg>
+      </div>
     </div>
     <nav class="header__nav">
       <button class="header__menu-button">

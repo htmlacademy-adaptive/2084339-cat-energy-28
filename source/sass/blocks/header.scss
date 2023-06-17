@@ -6,6 +6,11 @@
   line-height: 20px;
   color: $text-black;
   text-transform: uppercase;
+  overflow: hidden;
+
+  &--mobile-menu {
+    overflow: visible;
+  }
 }
 
 .header__content {
@@ -23,7 +28,7 @@
   background-color: $color-white;
   width: 100%;
   z-index: 3;
-  transition: all 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 
   &--open {
     position: absolute;
@@ -72,6 +77,10 @@
   background-color: transparent;
   outline: none;
   cursor: pointer;
+
+  // &--burger {
+
+  // }
 }
 
 @media #{$tablet-width} {
@@ -88,7 +97,6 @@
   .header__content {
     display: flex;
     padding-top: 0;
-
   }
 
   .header__logo-wrapper {
@@ -110,6 +118,11 @@
     &--close {
       position: static;
     }
+
+    &--close {
+      transform: none;
+      transition: unset;
+    }
   }
 }
 
@@ -126,7 +139,8 @@
   .header__nav {
     z-index: 3;
   }
+
   .header__nav-list {
     background-color: transparent;
-}
+  }
 }

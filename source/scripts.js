@@ -2,6 +2,8 @@ const menuButton = document.querySelector(`.header__menu-button`);
 const menu = document.querySelector(`.header__nav-list`);
 const header = document.querySelector(`.header`);
 
+const range = document.querySelector(`.range-slider__custom`)
+
 menuButton.addEventListener('click', (evt) => {
   evt.preventDefault()
 
@@ -20,6 +22,10 @@ menuButton.addEventListener('click', (evt) => {
     header.classList.add('header--mobile-menu')
   }
 
+})
+
+range.addEventListener(`input`, (evt) => {
+  console.log(`change`, evt.target.value)
 })
 
 console.log(menuButton)

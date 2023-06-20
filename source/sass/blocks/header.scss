@@ -68,19 +68,71 @@
 
 .header__menu-button {
   position: absolute;
+  display: flex;
+  align-items: center;
   top: 23px;
   right: 20px;
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 16px;
   border: none;
   padding: 0;
   background-color: transparent;
   outline: none;
   cursor: pointer;
+  z-index: 11;
 
-  // &--burger {
+  &--burger {
+    .header__burger-line {
+      background-color: $text-black;
 
-  // }
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 1.5px;
+        background-color: $text-black;
+        transform: none;
+      }
+
+      &::before {
+        top: 0;
+      }
+
+      &::after {
+        bottom: 0;
+        top: unset;
+      }
+    }
+  }
+}
+
+.header__burger-line {
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    transition: all 0.3s ease-in-out;
+    background-color: $text-black;
+  }
+
+  &::before {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  &::after {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
 }
 
 @media #{$tablet-width} {

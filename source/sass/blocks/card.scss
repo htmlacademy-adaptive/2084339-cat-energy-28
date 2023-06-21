@@ -116,6 +116,7 @@
 
   .card__content-wrapper {
     flex-direction: column;
+    align-items: initial;
 
     &--additional {
       flex-direction: row;
@@ -123,7 +124,8 @@
   }
 
   .card__title {
-    @include title-medium-2;
+    font-size: 20px;
+    line-height: 22px;
 
     &--main-product {
       line-height: 24px;
@@ -139,15 +141,25 @@
     text-align: center;
   }
 
-  .card__content-wrapper {
-    flex-direction: column;
-    align-items: initial;
-  }
-
   .card__text-content-wrapper {
     &--additional {
       flex-direction: row;
       align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .card__icon {
+    width: 60px;
+    height: 60px;
+    &::before {
+      height: 60px;
+    }
+
+    &::after {
+      top: 50%;
+      width: 60px;
+      height: 0;
     }
   }
 

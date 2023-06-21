@@ -20,7 +20,7 @@
 
 @media #{$tablet-width} {
   .catalog__title {
-    padding: 64px 30px 82px;
+    padding: 64px 30px 80px;
     border-bottom: none;
   }
 
@@ -28,6 +28,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 80px;
 
     &--additional {
       flex-direction: column;
@@ -40,17 +41,32 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    width: 46%;
-    min-height: 500px;
-    padding-top: 73px;
-    border-bottom: none;
+    padding-top: 0;
 
-    &--additional  {
+    &--main {
+      width: 46%;
+      border-bottom: none;
+      min-height: 430px;
+
+      &:nth-last-child(n + 3) {
+        margin-bottom: 140px;
+      }
+    }
+
+    &--additional {
+      width: 100%;
       min-height: 140px;
       padding: 26px 38px;
       border-bottom: $separator-line-1;
-      width: 100%;
     }
+
+    &:last-child {
+      border: $border-line-basic-grey;
+    }
+  }
+
+  .card__item:not(:last-child) {
+    border-bottom: $separator-line-3;
   }
 }
 
@@ -61,15 +77,29 @@
       border: unset;
     }
   }
+
   .catalog__item {
     width: 21%;
     min-height: 500px;
 
-    &--additional  {
+    &--additional {
       min-height: 72px;
       padding: 26px 38px;
       border-bottom: $separator-line-1;
       width: 100%;
     }
-}
+
+    &--main {
+      min-height: unset;
+      &:nth-last-child(n + 3) {
+        margin-bottom: unset;
+      }
+    }
+
+    &--main {
+      &:nth-last-child(n + 5) {
+        margin-bottom: 143px;
+      }
+    }
+  }
 }

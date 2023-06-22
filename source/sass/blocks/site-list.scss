@@ -34,6 +34,9 @@
 @media #{$desktop-width} {
   .site-list__link {
     &--current {
+      border-bottom-color: $basic-green;
+    }
+    &--current-index {
       border-bottom-color: $color-white;
     }
   }

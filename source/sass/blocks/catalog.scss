@@ -20,8 +20,9 @@
 
 @media #{$tablet-width} {
   .catalog__title {
-    padding: 64px 30px 80px;
+    padding: 40px 30px 80px;
     border-bottom: none;
+    font-size: 60px;
   }
 
   .catalog__list {
@@ -72,6 +73,10 @@
 }
 
 @media #{$desktop-width} {
+  .catalog__title {
+    padding-top: 20px;
+  }
+
   .catalog__list {
     &--additional {
       flex-grow: 1;

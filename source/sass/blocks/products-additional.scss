@@ -39,6 +39,7 @@
       width: 100vw;
     }
   }
+
   .products-additional__title-text {
     display: inline-block;
     background-color: $color-white;
@@ -48,12 +49,13 @@
 
 @media #{$desktop-width} {
   .products-additional {
-  padding: 0 110px 86px;
-}
-.products-additional__title {
-
-  &::after {
-    left: -110px;
+    padding: 0 110px 86px;
   }
-}
+
+  .products-additional__title {
+
+    &::after {
+      left: -110px;
+    }
+  }
 }

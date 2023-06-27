@@ -157,8 +157,6 @@
   resize: vertical;
   @include oswald-regular;
   color: $dark-grey;
-  font-size: 16px;
-  line-height: 18px;
   text-transform: uppercase;
   outline: none;
   border: $border-line-light-grey;
@@ -249,10 +247,15 @@ $input-icon-gap: 45px;
     line-height: $input-label-height-2;
   }
 
+  .form__textarea {
+    font-size: 20px;
+    line-height: $input-label-height-2;
+  }
+  
   .form__legend {
     font-size: 36px;
     line-height: 1;
-    padding-top: 0;
+    padding: 0;
 
     &--comment,
     &--contacts {
@@ -315,6 +318,7 @@ $input-icon-gap: 45px;
       flex-wrap: wrap;
       padding-left: 40px;
       padding-right: 36px;
+      margin-bottom: 60px;
     }
   }
 
@@ -344,6 +348,10 @@ $input-icon-gap: 45px;
     }
   }
 
+  .form__textarea {
+    padding-left: 19px;
+  }
+
   .form__button-wrapper {
     display: flex;
     align-items: center;
@@ -355,6 +363,10 @@ $input-icon-gap: 45px;
     font-size: 20px;
     margin-bottom: 0;
     margin-right: 60px;
+  }
+
+  .form__required-fields {
+    font-size: 16px;
   }
 }
 
@@ -371,7 +383,7 @@ $input-icon-gap: 45px;
     }
 
     &--weight {
-      width: 100%;
+      width: 50%;
     }
 
     &--contacts {
@@ -406,7 +418,6 @@ $input-icon-gap: 45px;
 
     &--additional {
       width: 100%;
-      justify-content: space-between;
     }
   }
 
@@ -428,7 +439,11 @@ $input-icon-gap: 45px;
     }
 
     &--additional {
-      width: unset;
+      width: 18%;
+
+      &:not(:last-child) {
+        margin-right: 104px;
+      }
     }
   }
 

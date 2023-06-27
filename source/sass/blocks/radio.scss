@@ -1,11 +1,11 @@
-$radio-width: 30px;
-$radio-height: 30px;
-$radio-bullet-height: 14px;
-$radio-bullet-width: 14px;
+$radio-mobile-size: 30px;
+$radio-bullet-mobile-size: 14px;
+$radio-tablet-size: 40px;
+$radio-bullet-tablet-size: 18px;
 
 .radio {
   position: relative;
-  padding-left: 46px;
+  padding-left: calc($radio-mobile-size + $radio-bullet-mobile-size);
   cursor: pointer;
 
   &::before,
@@ -16,18 +16,18 @@ $radio-bullet-width: 14px;
 
   &::before {
     content: "";
-    width: $radio-width;
-    height: $radio-height;
-    top: calc(($input-label-height - $radio-height) / 2);
+    width: $radio-mobile-size;
+    height: $radio-mobile-size;
+    top: calc(($input-label-height - $radio-mobile-size) / 2);
     left: 0;
     border: $separator-line-3;
   }
 
   &::after {
-    width: $radio-bullet-width;
-    height: $radio-bullet-height;
-    top: calc((($input-label-height - $radio-height) / 2) + ($radio-height / 2));
-    left: calc($radio-width / 2);
+    width: $radio-bullet-mobile-size;
+    height: $radio-bullet-mobile-size;
+    top: calc((($input-label-height - $radio-mobile-size) / 2) + ($radio-mobile-size / 2));
+    left: calc($radio-mobile-size / 2);
     transform: translate(-50%, -50%);
     background-color: $basic-green;
   }
@@ -35,4 +35,23 @@ $radio-bullet-width: 14px;
 
 .input-radio:checked+.radio::after {
   content: "";
+}
+
+@media #{$tablet-width} {
+  .radio {
+    padding-left: calc($radio-tablet-size + $radio-bullet-tablet-size);
+
+    &::before {
+      width: $radio-tablet-size;
+      height: $radio-tablet-size;
+      top: calc(($input-label-height-2 - $radio-tablet-size) / 2);
+    }
+
+    &::after {
+      width: $radio-bullet-tablet-size;
+      height: $radio-bullet-tablet-size;
+      top: calc((($input-label-height-2 - $radio-tablet-size) / 2) + ($radio-tablet-size / 2));
+      left: calc($radio-tablet-size / 2);
+    }
+  }
 }

@@ -9,7 +9,7 @@
   align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../../images/cat-gift.jpg");
+  background-image: url("../../images/cat-gift-mobile.jpg");
   width: 100%;
   min-height: 290px;
   background-color: $basic-green;
@@ -33,6 +33,7 @@
   .advertisement__wrapper {
     flex-direction: row;
     justify-content: space-around;
+    background-image: url("../../images/cat-gift-tablet.jpg");
   }
 
   .advertisement__image {
@@ -54,6 +55,7 @@
   .advertisement__wrapper {
     display: flex;
     flex-direction: column;
+    background-image: url("../../images/cat-gift-mobile.jpg");
     padding: 56px 42px 42px;
     width: 244px;
   }

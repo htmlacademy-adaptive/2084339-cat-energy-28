@@ -144,7 +144,8 @@
         <h2 class="example__title">Живой пример</h2>
         <div class="example__main-content">
           <div class="example__text-block">
-            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+              Energy
               Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
               по
               16 часов в день.</p>
@@ -166,13 +167,19 @@
             </div>
           </div>
           <div class="example__cat-slider">
-            <div class="example__image-wrapper">
-
-              <img class="example__image" src="images/cat-fat.png" width="311" height="240" alt="Пример толстого кота">
+            <div class="example__image-block">
+              <div class="example__image-frame example__image-frame--cat-fat">
+                <img class="example__image example__image--cat-fat" src="images/cat-fat.png" width="311" height="232"
+                  alt="Пример толстого кота">
+              </div>
+              <div class="example__image-frame example__image-frame--cat-skinny">
+                <img class="example__image example__image--cat-skinny" src="images/cat-skinny.png" width="247"
+                   alt="Пример толстого кота">
+              </div>
             </div>
             <label class="range-slider">
               <span class="range-slider__name range-slider__name--before">Было</span>
-              <input class="range-slider__custom" type="range" min="0" max="100" value="50" name="range" step="10">
+              <input class="range-slider__custom" type="range" min="0" max="100" value="50" name="range" step="1">
               <span class="range-slider__name range-slider__name--after">Стало</span>
             </label>
           </div>
@@ -243,7 +250,6 @@
       </section>
     </div>
   </footer>
-  <script src="./scripts.js"></script>
+  <script src="./js/scripts.js"></script>
 </body>
-
 </html>

@@ -28,5 +28,3 @@ range.addEventListener(`input`, (evt) => {
   catFatFrame.style.width = 100 - evt.target.value + "%";
   console.log(`change`, evt.target.value)
 })
-
-console.log(menuButton)

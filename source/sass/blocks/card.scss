@@ -204,7 +204,9 @@
   }
 
   .card__item-name {
+    &--products-additional {
     margin-right: 50px;
+    }
   }
 }
 
@@ -218,19 +220,34 @@
 
   .card__title {
     &--products-additional {
-      min-width: 324px;
+      width: 100%;
+      margin-right: 38px;
+    }
+  }
+
+  .card__list {
+    &--products-additional {
+      width: 100%;
+      margin-right: 38px;
+    }
+  }
+
+  .card__item {
+    &--products-additional {
+      padding-bottom: 0;
     }
   }
 
   .card__item-name {
     &--products-additional {
-      min-width: 244px;
+      margin-right: 20px;
     }
   }
 
   .card__content-wrapper {
     &--additional {
       margin-bottom: 0;
+      width: 100%;
     }
   }
 

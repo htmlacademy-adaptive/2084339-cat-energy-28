@@ -2,7 +2,7 @@
   display: flex;
   overflow-wrap: break-word;
   @include title-large;
-  line-height: 36px;
+  line-height: 1;
   padding: 27px 20px 40px;
   border-bottom: $separator-line-1;
   margin-bottom: 0;
@@ -74,7 +74,7 @@
 
 @media #{$desktop-width} {
   .catalog__title {
-    padding-top: 20px;
+    padding: 24px 110px 85px;
   }
 
   .catalog__list {
@@ -96,7 +96,6 @@
       padding: 15px 0;
       border-bottom: $separator-line-1;
       width: 100%;
-      margin-right: 80px;
     }
 
     &--main {

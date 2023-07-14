@@ -11,10 +11,10 @@
   background-size: cover;
   background-image: url("../../images/cat-gift-mobile.jpg");
   width: 100%;
-  min-height: 290px;
+  height: 290px;
   background-color: $basic-green;
   margin: 0;
-  padding: 66px 60px 43px;
+  padding: 58px 60px 43px;
   font-size: 16px;
   line-height: 20px;
   color: $color-white;
@@ -32,8 +32,13 @@
 @media #{$tablet-width} {
   .advertisement__wrapper {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     background-image: url("../../images/cat-gift-tablet.jpg");
+    width: 710px;
+    height: 200px;
+    padding-right: 124px;
+    padding-bottom: 70px;
+    padding-left: 78px;
   }
 
   .advertisement__image {
@@ -43,13 +48,13 @@
 
   .advertisement__description {
     width: 30%;
+    text-align: left;
   }
 }
 
 @media #{$desktop-width} {
   .advertisement {
     height: 288px;
-    width: 100%;
   }
 
   .advertisement__wrapper {
@@ -58,6 +63,7 @@
     background-image: url("../../images/cat-gift-mobile.jpg");
     padding: 56px 42px 42px;
     width: 244px;
+    height: auto;
   }
 
   .advertisement__image {
@@ -67,5 +73,6 @@
 
   .advertisement__description {
     width: unset;
+    text-align: center;
   }
 }

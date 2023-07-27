@@ -53,7 +53,8 @@
       <picture>
         <source srcset="images/index-can-desktop.png" media="(min-width:1440px)">
         <source srcset="images/index-can-tablet.jpg" media="(min-width:768px)">
-        <img class="promo__image" src="images/index-can-mobile.png"
+        <source media="(min-width:320px)" srcset="images/index-can-mobile-1x.png, images/index-can-mobile-2x.png 2x">
+        <img class="promo__image" src="images/index-can-mobile-1x.png"
           alt="Промо-упаковка кошачьей еды с лого на крышке со вкусом курицы">
       </picture>
       <div class="promo__button-wrapper">
@@ -169,12 +170,12 @@
           <div class="example__cat-slider">
             <div class="example__image-block">
               <div class="example__image-frame example__image-frame--cat-fat">
-                <img class="example__image example__image--cat-fat" src="images/cat-fat.png" width="311" height="232"
+                <img class="example__image example__image--cat-fat" src="images/cat-fat-mobile-1x.png" srcset="images/cat-fat-mobile-2x.png 2x" width="311" height="232"
                   alt="Пример толстого кота">
               </div>
               <div class="example__image-frame example__image-frame--cat-skinny">
-                <img class="example__image example__image--cat-skinny" src="images/cat-skinny.png" width="247"
-                   alt="Пример толстого кота">
+                <img class="example__image example__image--cat-skinny" src="images/cat-skinny-mobile-1x.png" srcset="images/cat-skinny-mobile-2x.png 2x" width="247"
+                   alt="Пример худого кота">
               </div>
             </div>
             <label class="range-slider">

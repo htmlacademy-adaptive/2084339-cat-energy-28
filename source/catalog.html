@@ -19,11 +19,13 @@
           <img class="header__logo-image" src="images/logo-mobile.svg" alt="Логотип сайта Cat Energy">
         </picture>
       </a>
-      <div class="header__logo-wrapper">
-        <svg class="header__logo-text" width="101" height="18">
-          <use xlink:href="images/sprite.svg#logo-text" />
-        </svg>
-      </div>
+      <a class="header__logo-link-pic" href="index.html">
+        <div class="header__logo-wrapper">
+          <svg class="header__logo-text" width="101" height="18">
+            <use xlink:href="images/sprite.svg#logo-text" />
+          </svg>
+        </div>
+      </a>
     </div>
     <nav class="header__nav">
       <button class="header__menu-button header__menu-button--burger">
@@ -201,7 +203,7 @@
                     srcset="images/catalog-wheat-500-tablet-1x.png, images/catalog-wheat-500-tablet-2x.png 2x">
                   <source media="(min-width:320px)"
                     srcset="images/catalog-wheat-500-mobile-1x.png, images/catalog-wheat-500-mobile-2x.png 2x">
-                  <img class="card__image" src="images/catalog-5-desktop.png"
+                  <img class="card__image" src="images/catalog-wheat-500-tablet-1x.png"
                     alt="Продукт каталога Cat Energy Slim со вкусом гречки 500г">
                 </picture>
               </div>
@@ -462,7 +464,6 @@
     </div>
   </footer>
   <script src="./js/scripts.js"></script>
-
 </body>
 
 </html>

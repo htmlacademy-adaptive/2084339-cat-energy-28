@@ -12,11 +12,66 @@
   font-family: Oswald, sans-serif;
   text-transform: uppercase;
   color: $text-black;
-  min-width: 70px;
   height: 30px;
+
+  &--before {
+    margin-right: 12px;
+  }
+
+  &--after {
+    margin-left: 12px;
+  }
 }
 
 .range-slider__custom {
   width: 100%;
+  background-color: white;
+  appearance: none;
+  min-width: 84px;
+  height: 14px;
+  border: $separator-line-3;
+  border-radius: 6px;
+  padding: 0 4px;
+
+  &::-webkit-slider-thumb {
+    @include range-thumb;
+  }
+
+  &::-moz-range-thumb {
+    @include range-thumb;
+  }
+
+  &::-ms-thumb {
+    @include range-thumb;
+  }
+
+  &::-webkit-slider-runnable-track {
+    @include range-runnable-track;
+  }
 }
 
+@media #{$tablet-width} {
+  .range-slider__custom {
+    height: 6px;
+    background-color: $grey-range-bg;
+    border: none;
+  }
+
+  .range-slider__name {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      border-bottom: 1px dotted #b2b2b2;
+      bottom: -1px;
+      width: 100%;
+    }
+  }
+}
+
+@media #{$desktop-width} {
+  .range-slider {
+    padding: 0 70px;
+  }
+}

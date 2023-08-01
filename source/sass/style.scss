@@ -5,18 +5,23 @@
 @import './mixins/list-reset.scss';
 @import './mixins/fonts.scss';
 @import './mixins/title.scss';
+@import './mixins/container.scss';
+@import './mixins/range.scss';
 
 // VARIABLES
 @import './variables.scss';
 
 // BLOCKS
 @import './blocks/body.scss';
+@import './blocks/button.scss';
+@import './blocks/radio.scss';
+@import './blocks/checkbox.scss';
 @import './blocks/header.scss';
 @import './blocks/site-list.scss';
 @import './blocks/promo.scss';
 @import './blocks/sub-promo.scss';
 @import './blocks/visually-hidden.scss';
-@import './blocks/button.scss';
+@import './blocks/main.scss';
 @import './blocks/about.scss';
 @import './blocks/example.scss';
 @import './blocks/range-slider.scss';
@@ -30,6 +35,4 @@
 @import './blocks/advertisement.scss';
 @import './blocks/application.scss';
 @import './blocks/form.scss';
-@import './blocks/radio.scss';
-@import './blocks/checkbox.scss';
 @import './blocks/products.scss';

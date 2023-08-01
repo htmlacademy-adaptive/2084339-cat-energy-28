@@ -61,10 +61,49 @@
 }
 
 @media #{$tablet-width} {
+  .sub-promo {
+    margin-bottom: 45px;
+    padding: 0 30px;
+  }
+
+  .sub-promo__item {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
   .sub-promo__card {
     position: relative;
-    padding-right: 316px;
+    padding: 76px 316px 56px 52px;
     min-height: 372px;
+  }
+
+  .sub-promo__card-wrapper {
+    margin-bottom: 0;
+  }
+
+  .sub-promo__title-card {
+    font-size: 36px;
+    line-height: 1;
+    margin-bottom: 28px;
+  }
+
+  .sub-promo__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: $text-black;
+    margin-top: 0;
+    margin-bottom: 52px;
+    border-bottom: none;
+  }
+
+  .sub-promo__link {
+    padding-top: 0;
+  }
+
+  .sub-promo__link-title {
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .sub-promo__card-image {
@@ -88,8 +127,33 @@
 }
 
 @media #{$desktop-width} {
+  .sub-promo {
+    padding-left: 110px;
+    padding-right: 110px;
+    margin-bottom: 71px;
+  }
+
   .sub-promo__list {
     display: flex;
+    justify-content: space-between;
+  }
+
+  .sub-promo__item {
+    &:not(:last-child) {
+      margin-right: 80px;
+    }
+  }
+
+  .sub-promo__card {
+    height: 374px;
+    width: 570px;
+    padding-top: 40px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+  }
+
+  .sub-promo__card-wrapper {
+    margin-bottom: 40px;
   }
 
   .sub-promo__card-image {
@@ -98,12 +162,23 @@
     &--slim {
       width: 100px;
       height: 106px;
+      margin-right: 62px;
     }
 
     &--pro {
       width: 134px;
       height: 100px;
+      margin-right: 46px;
     }
   }
 
+  .sub-promo__title-card {
+    margin-bottom: 0;
+  }
+
+  .sub-promo__text {
+    padding-bottom: 0;
+    margin-bottom: 27px;
+    width: 100%;
+  }
 }

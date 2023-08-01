@@ -5,7 +5,7 @@
 }
 
 @media #{$desktop-width} {
-  .products-additional__content-wrapper {
-    display: flex;
+  .products {
+    padding: 0 110px 75px;
   }
 }

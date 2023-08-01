@@ -16,7 +16,29 @@
     display: flex;
   }
 
+  .site-list__item:not(:last-child) {
+    margin-right: 35px;
+  }
+
   .site-list__link {
-    border-bottom: none;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid transparent;
+
+    &--current {
+      border-bottom-color: $basic-green;
+    }
+  }
+}
+
+@media #{$desktop-width} {
+  .site-list__link {
+    &--current {
+      border-bottom-color: $basic-green;
+    }
+
+    &--current-index {
+      border-bottom-color: $color-white;
+    }
   }
 }

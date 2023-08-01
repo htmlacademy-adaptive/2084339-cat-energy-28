@@ -12,6 +12,13 @@
   margin-top: 0;
 }
 
+@mixin title-medium-2 {
+  @include oswald-regular;
+  font-size: 20px;
+  color: $text-black;
+  margin-top: 0;
+}
+
 @mixin title-small {
   @include oswald-regular;
   font-size: 16px;

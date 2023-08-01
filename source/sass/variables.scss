@@ -1,22 +1,36 @@
-$basic-grey: #F2F2F2;
-$basic-green: #68B738;
 $color-white: #FFFFFF;
-$dark-grey: #444444;
-$light-grey-bg: #EAEAEA;
+$basic-grey: #F2F2F2;
 $light-grey: #D9D9D9;
-$special-dark-grey: #222222;
+$light-grey-1: #D3D3D3;
+$light-grey-2: #E7E7E7;
+$light-grey-3: #E6E6E6;
+$light-grey-4: #D9D9D9;
+$light-grey-bg: #EAEAEA;
+$grey-range-bg: #DCDCDC;
+$light-grey-5: #CDCDCD;
+$light-grey-6: #EBEBEB;
 $special-grey: #666666;
+$dark-grey: #444444;
+$special-dark-grey: #222222;
 $text-black: #000000;
+$basic-green: #68B738;
 
-$border-line-grey: 1px solid #D3D3D3;
-$border-line-light-grey: 1px solid #E7E7E7;
+$border-line-grey: 1px solid $light-grey-1;
+$border-line-grey: 1px solid $light-grey-1;
+$border-line-light-grey-2: 1px solid $light-grey-2;
+$border-line-light-grey: 1px solid $light-grey-1;
+$border-line-green: 2px solid $basic-green;
+$border-line-basic-grey: 2px solid $basic-grey;
 
-$separator-line-1: 1px solid #E6E6E6;
-$separator-line-2: 1px solid #D9D9D9;
-$separator-line-3: 1px solid #CDCDCD;
-$separator-line-4: 1px solid #EBEBEB;
+$separator-line-1: 1px solid $light-grey-3;
+$separator-line-2: 1px solid $light-grey-4;
+$separator-line-3: 1px solid $light-grey-5;
+$separator-line-4: 1px solid $light-grey-6;
 
 $input-label-height: 18px;
+$input-label-height-2: 30px;
+$header-height-desktop: 156px;
 
 $tablet-width: "(min-width: 768px)";
 $desktop-width: "(min-width: 1440px)";
+$retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";

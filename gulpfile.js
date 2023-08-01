@@ -4,6 +4,23 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import csso from 'gulp-csso';
+import rename from 'gulp-rename';
+import imagemin from 'gulp-imagemin';
+
+// Images
+
+const images = () => {
+  gulp.task('images', () => {
+    return gulp.src('source/images/**/*.{png,jpg,svg}')
+      .pipe(imagemin([
+        imagemin.optipng({ optimizationLevel: 3 }),
+        imagemin.jpestran({ progressive: true }),
+        imagemin.svgo()
+      ]))
+      .pipe(gulp.dest("source/images"));
+  })
+}
 
 // Styles
 
@@ -14,7 +31,10 @@ export const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('source/css'))
+    .pipe(csso())
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('source/css'))
     .pipe(browser.stream());
 }
 

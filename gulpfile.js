@@ -10,6 +10,9 @@ import imagemin from 'gulp-imagemin';
 import { deleteSync } from 'del';
 import posthtml from 'gulp-posthtml';
 import include from 'posthtml-include';
+import imageminMozjpeg from 'imagemin-mozjpeg';
+import imageminOptipng from 'imagemin-optipng';
+import imageminSvgo from 'imagemin-svgo';
 
 gulp.task("clean", function (done) {
   done()
@@ -19,7 +22,6 @@ gulp.task("clean", function (done) {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/images/**",
     "source/js/**"
   ], {
     base: "source"
@@ -32,7 +34,11 @@ gulp.task("style", function (done) {
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer({
+        browsers: [
+          "last 2 versions"
+        ]
+      })
     ]))
     .pipe(csso())
     .pipe(rename("style.min.css"))
@@ -48,28 +54,22 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task('images', () => {
+  return gulp.src('source/images/**/*.{png,jpg,svg}')
+    .pipe(imagemin([
+      imageminMozjpeg({ quality: 80, progressive: true }),
+      imageminOptipng({ optimizationLevel: 2 }),
+      imageminSvgo(),
+    ]))
+    .pipe(gulp.dest("build/images"));
+})
+
 gulp.task('build', gulp.series(
   "clean",
   "copy",
+  "images",
   "style",
   "html"));
-
-// Images
-
-const images = () => {
-  gulp.task('images', () => {
-    return gulp.src('source/images/**/*.{png,jpg,svg}')
-      .pipe(imagemin([
-        imagemin.optipng({ optimizationLevel: 3 }),
-
-        imagemin.jpestran({ progressive: true }),
-        imagemin.svgo()
-
-        
-      ]))
-      .pipe(gulp.dest("source/images"));
-  })
-}
 
 gulp.task("server", function (done) {
   browser.init({
